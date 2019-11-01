@@ -1,0 +1,83 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+ body {
+  padding-top: 56px;
+  font-family: 'Noto Sans TC', 'Roboto';
+}
+
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+/*以下為裝飾table所需之css*/
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+h1 { 
+  font-family: 'Amarante', Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 3.6em;
+  line-height: 1.7em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#keywords {
+  margin: 0 auto;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+
+#keywords thead {
+  background: #c9dff0;
+}
+#keywords thead tr th { 
+  font-weight: bold;
+  padding: 7px 20px;
+  padding-left: 5%;
+}
+
+#keywords tbody tr td { 
+  /*font-weight: bold;*/
+  padding: 7px;
+  padding-left: 5%;
+}
+
+#keywords thead tr th span { 
+  padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+#keywords thead tr th.headerSortUp, #keywords thead tr th.headerSortDown {
+  background: #acc8dd;
+}
+
+#keywords tbody tr { 
+  color: #555;
+}
+/*#keywords tbody tr td {
+  text-align: center;
+  padding: 15px 7px;
+}*/
+#keywords tbody tr td.lalign {
+  text-align: left;
+}
+
+h4 {
+  margin-bottom: 0;
+}
