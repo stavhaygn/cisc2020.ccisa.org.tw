@@ -90,7 +90,7 @@ const Activity = () => (
         </div>
         <div
           id="collapseTwo"
-          className="collapse"
+          className="collapse show"
           role="tabpanel"
           aria-labelledby="headingTwo"
         >
@@ -137,7 +137,7 @@ const Activity = () => (
         </div>
         <div
           id="collapseThree"
-          className="collapse"
+          className="collapse show"
           role="tabpanel"
           aria-labelledby="headingThree"
         >
@@ -194,7 +194,7 @@ const Activity = () => (
         </div>
         <div
           id="collapseFour"
-          className="collapse"
+          className="collapse show"
           role="tabpanel"
           aria-labelledby="headingFour"
         >
