@@ -126,11 +126,11 @@ const App = () => (
       <footer className="py-5 bg-dark">
         <div className="container">
           <p className="m-0 text-center text-white">
-            地址：80424高雄市鼓山區蓮海路70號 總機電話：07-5252-000
+            電話：80424高雄市鼓山區蓮海路70號 電資大樓EC-2017 | 電話：07-5250558
           </p>
           <p className="m-0 text-center text-white">
-            信箱: cisc2020@gmail.com Copyright &copy; 2020{' '}
-            <a href="http://www.nsysu.edu.tw/index.php">國立中山大學</a>
+            信箱：cisc2020@ccisa.org.tw Copyright &copy; 2020{' '}
+            <a href="https://www.ccisa.org.tw/">中華民國資訊安全學會</a>
           </p>
         </div>
       </footer>

@@ -3,59 +3,23 @@ import React from 'react';
 const Home = () => (
   <div className="container">
     <h1 className="my-4">最新消息</h1>
-    <div className="row">
-      <div className="col-lg-4 mb-4">
-        <div className="card h-100">
-          <h4 className="card-header">消息1主旨</h4>
-          <div className="card-body">
-            <p className="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-              esse necessitatibus neque.
-            </p>
-          </div>
-          <div className="card-footer">
-            <a href="/" className="btn btn-primary">
-              Learn More
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="col-lg-4 mb-4">
-        <div className="card h-100">
-          <h4 className="card-header">消息2主旨</h4>
-          <div className="card-body">
-            <p className="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Reiciendis ipsam eos, nam perspiciatis natus commodi similique
-              totam consectetur praesentium molestiae atque exercitationem ut
-              consequuntur, sed eveniet, magni nostrum sint fuga.
-            </p>
-          </div>
-          <div className="card-footer">
-            <a href="/" className="btn btn-primary">
-              Learn More
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="col-lg-4 mb-4">
-        <div className="card h-100">
-          <h4 className="card-header">消息3主旨</h4>
-          <div className="card-body">
-            <p className="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-              esse necessitatibus neque.
-            </p>
-          </div>
-          <div className="card-footer">
-            <a href="/" className="btn btn-primary">
-              Learn More
-            </a>
-          </div>
-        </div>
+    <div id="news_container">
+      <div className="row">
+        <div className="news">2019/11/20 議程準備中，請稍後🚧</div>
+        <div className="news">2019/11/20 網站如常運行中</div>
+        <div className="news">2019/11/10 經過會議討論過後，部分頁面需修改</div>
+        <a
+          href=""
+          style={{
+            width: '100%',
+            fontSize: '20px',
+            textAlign: 'center',
+          }}
+        >
+          <div>More News</div>
+        </a>
       </div>
     </div>
-
     <h2>會議資料</h2>
 
     <div className="row">
