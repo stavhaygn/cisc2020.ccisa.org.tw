@@ -110,3 +110,19 @@ h4 {
   color: white;
   transition: 0.3s;
 }
+
+#root {
+  position: relative;
+  min-height: 91.5vh;
+}
+
+#content-wrap {
+  padding-bottom: 8rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;            /* Footer height */
+}

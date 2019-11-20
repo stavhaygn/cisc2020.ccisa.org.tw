@@ -72,8 +72,8 @@ const QA = ({ question }) => {
               </tbody>
             </table>
           ) : (
-            <div></div>
-          )}
+              <div></div>
+            )}
         </div>
       </div>
     </div>
@@ -190,7 +190,7 @@ const MessageBoard = ({ submitInput }) => {
 };
 const Question = () => {
   const [questions, setQuestions] = useState([
-    { name: '', subject: '', content: '' },
+    { name: '', subject: '', time: '', content: '' },
   ]);
 
   const fetchQuestions = async () => {
@@ -225,9 +225,9 @@ const Question = () => {
         role="tablist"
         aria-multiselectable="true"
       >
-        {questions.map((question, index) => (
-          <QA key={index} question={question} />
-        ))}
+        {questions.map((question, index) =>
+          question.name ? <QA key={index} question={question} /> : <div></div>,
+        )}
       </div>
       <MessageBoard submitInput={submitInput} />
     </div>
