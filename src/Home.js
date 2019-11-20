@@ -2,14 +2,19 @@ import React from 'react';
 
 const Home = () => (
   <div className="container">
-    <h1 className="my-4">最新消息</h1>
+    <h1 className="my-4">最新訊息</h1>
     <div id="news_container">
       <div className="row">
-        <div className="news">2019/11/20 議程準備中，請稍後🚧</div>
+        <div className="news">
+          2019/11/20 議程準備中，請稍後
+          <span role="img" aria-label="Construction">
+            🚧
+          </span>
+        </div>
         <div className="news">2019/11/20 網站如常運行中</div>
         <div className="news">2019/11/10 經過會議討論過後，部分頁面需修改</div>
         <a
-          href=""
+          href="/"
           style={{
             width: '100%',
             fontSize: '20px',

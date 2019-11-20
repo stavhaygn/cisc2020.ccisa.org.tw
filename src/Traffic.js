@@ -81,6 +81,104 @@ const Traffic = () => (
         </ul>
         <hr />
       </div>
+      <div className="col-lg-12 mb-4">
+        <h3>大眾運輸</h3>
+        <ul>
+          <li>
+            高雄車站週邊有多家客運業者提供客運服務，路線遍及各縣市。
+            路線及票價查詢：
+          </li>
+          <li>
+            <a
+              href="http://www.kingbus.com.tw/"
+              title="國光客運"
+              style={{
+                color: '#212529',
+                outline: 'none',
+                textDecoration: 'none',
+              }}
+            >
+              國光客運
+            </a>
+            （台北、桃園、新竹、台中、嘉義、台南、屏東等）
+          </li>
+          <li>
+            <a
+              href="http://www.ubus.com.tw/"
+              title="統聯客運"
+              style={{
+                color: '#212529',
+                outline: 'none',
+                textDecoration: 'none',
+              }}
+            >
+              統聯客運
+            </a>
+            （台北、桃園、新竹、台中、嘉義、台南、屏東等）
+          </li>
+          <li>
+            <a
+              href="https://www.aloha168.com.tw/"
+              title="阿囉哈客運"
+              style={{
+                color: '#212529',
+                outline: 'none',
+                textDecoration: 'none',
+              }}
+            >
+              阿囉哈客運
+            </a>
+            （台北、桃園、新竹、台中、嘉義、台南、屏東等）
+          </li>
+          <li>
+            <a
+              href="http://www.ebus.com.tw/"
+              title="和欣客運"
+              style={{
+                color: '#212529',
+                outline: 'none',
+                textDecoration: 'none',
+              }}
+            >
+              和欣客運
+            </a>
+            （台北、桃園、新竹、台中、嘉義、台南等）
+          </li>
+          <li>
+            <a
+              href="http://yoyonet.biz/egoing/bus/kaopin/chunan.htm"
+              title="中南客運"
+              style={{
+                color: '#212529',
+                outline: 'none',
+                textDecoration: 'none',
+              }}
+            >
+              中南客運
+            </a>
+            （墾丁、鵝鑾鼻）
+          </li>
+          <li>
+            <a
+              href="http://www.ksbus.com.tw/"
+              title="高雄客運"
+              style={{
+                color: '#212529',
+                outline: 'none',
+                textDecoration: 'none',
+              }}
+            >
+              高雄客運
+            </a>
+            （台中、大高雄地區、墾丁）
+          </li>
+          <li>
+            註 :
+            客運之終點站往往在高雄火車站或其鄰近地區，到達後可至火車站前的公車站搭乘248或50號公車即可到達學校隧道口。
+          </li>
+        </ul>
+        <hr />
+      </div>
 
       <div className="col-lg-12 mb-4">
         <h3>自行開車</h3>

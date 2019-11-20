@@ -90,7 +90,12 @@ const ConferenceAgenda = () => (
       </li>
       <li className="breadcrumb-item active">會議議程</li>
     </ol>
-    <h4>議程準備中，請稍後🚧</h4>
+    <h4>
+      議程準備中，請稍後
+      <span role="img" aria-label="Construction">
+        🚧
+      </span>
+    </h4>
     <hr />
   </div>
 );
