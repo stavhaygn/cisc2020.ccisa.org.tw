@@ -15,45 +15,29 @@ const Slide = () => (
           className="active"
         ></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        {/* <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> */}
       </ol>
       <div className="carousel-inner" role="listbox">
         <div
           className="carousel-item active"
           style={{
-            backgroundImage:
-              "url('https://talk543.news/wp-content/uploads/2019/03/NSYSU-2188x1094.jpg')",
+            backgroundImage: "url('slide1.jpg')",
           }}
         >
           <div className="carousel-caption d-none d-md-block">
             <h3>中山大學</h3>
-            <p>This is a description for the first slide.</p>
+            <p></p>
           </div>
         </div>
-
         <div
           className="carousel-item"
           style={{
-            backgroundImage:
-              "url('https://upload.wikimedia.org/wikipedia/commons/e/ec/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%B8%E9%9A%A7%E9%81%93%E5%8F%A3%E6%9D%B1%E7%AB%AF.jpg')",
+            backgroundImage: "url('slide2.jpg')",
           }}
         >
           <div className="carousel-caption d-none d-md-block">
-            <h3>一去不復返</h3>
-            <p>This is a description for the second slide.</p>
-          </div>
-        </div>
-
-        <div
-          className="carousel-item"
-          style={{
-            backgroundImage:
-              "url('https://www.khmice.org.tw/wp-content/uploads/2015/10/%E5%9C%8B%E7%AB%8B%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%B8.jpg')",
-          }}
-        >
-          <div className="carousel-caption d-none d-md-block">
-            <h3>校門口啦</h3>
-            <p>This is a description for the third slide.</p>
+            <h3>中山大學</h3>
+            <p></p>
           </div>
         </div>
       </div>
