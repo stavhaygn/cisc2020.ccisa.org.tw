@@ -3,20 +3,32 @@ import React from 'react';
 const News = () => (
   <div className="container">
     <h1 className="mt-4 mb-3">最新訊息</h1>
-
     <ol className="breadcrumb">
       <li className="breadcrumb-item">
         <a href="index.html">Home</a>
       </li>
       <li className="breadcrumb-item active">最新訊息</li>
     </ol>
-    <h4>
-      訊息產生中...
-      <span role="img" aria-label="Message">
-        💬
-      </span>
-    </h4>
-    <hr />
+
+    <table className="table">
+      <thead>
+        <tr>
+          <th scope="col">日期</th>
+          <th scope="col">標題</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style={{ color: '#F8C651' }}>
+            <b>2020/1/6</b>
+          </td>
+
+          <td>
+            <a href="/NewsDetail/0">論文投稿已開始，歡迎大家踴躍投稿。</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 );
 

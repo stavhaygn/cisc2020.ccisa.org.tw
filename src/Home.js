@@ -19,7 +19,7 @@ const Home = () => (
               </td>
 
               <td>
-                <a href="/News/1">論文投稿已開始，歡迎大家踴躍投稿。</a>
+                <a href="/NewsDetail/0">論文投稿已開始，歡迎大家踴躍投稿。</a>
               </td>
             </tr>
           </tbody>

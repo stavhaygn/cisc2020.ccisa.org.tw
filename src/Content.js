@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Home from './Home';
 import News from './News';
+import NewsDetail from './NewDetail';
 import Registration from './Registration';
 import Organization from './Organization';
 import Question from './Question';
@@ -16,6 +17,7 @@ const Content = () => (
   <Switch>
     <Route exact path="/" component={Home} />
     <Route path="/News" component={News} />
+    <Route path="/NewsDetail/:number" component={NewsDetail} />
     <Route path="/ConferenceGoal" component={ConferenceGoal} />
     <Route path="/ConferenceAgenda" component={ConferenceAgenda} />
     <Route path="/Registration" component={Registration} />
