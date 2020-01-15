@@ -27,7 +27,7 @@
 table { border-collapse: collapse; border-spacing: 0; }
 
 h1 { 
-  font-family: 'Amarante', Tahoma, sans-serif;
+  /* font-family: 'Amarante', Tahoma, sans-serif; */
   font-weight: bold;
   font-size: 3.6em;
   line-height: 1.7em;

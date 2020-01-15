@@ -116,10 +116,6 @@ const Organization = () => (
             <td>陳嘉玫 教授</td>
             <td>國立中山大學</td>
           </tr>
-          <tr>
-            <td>徐瑞壕 教授</td>
-            <td>國立中山大學</td>
-          </tr>
         </tbody>
       </table>
       <hr />
