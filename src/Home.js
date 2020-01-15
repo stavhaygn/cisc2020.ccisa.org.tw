@@ -56,7 +56,7 @@ const Home = () => (
     </div>
 
     <div className="text-center mb-3">
-      <img src="cfp.png"></img>
+      <img src="cfp.png" alt=""></img>
     </div>
   </div>
 );

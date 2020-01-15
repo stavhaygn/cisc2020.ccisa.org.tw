@@ -12,6 +12,7 @@ import ConferenceAgenda from './ConferenceAgenda';
 import Organizer from './Organizer';
 import CoOrganizer from './CoOrganizer';
 import Traffic from './Traffic';
+import Accommodation from './Accommodation';
 
 const Content = () => (
   <Switch>
@@ -26,6 +27,7 @@ const Content = () => (
     <Route path="/CoOrganizer" component={CoOrganizer} />
     <Route path="/Activity" component={Activity} />
     <Route path="/Traffic" component={Traffic} />
+    <Route path="/Accommodation" component={Accommodation} />
     <Route path="/Question" component={Question} />
     <Route component={Home} />
   </Switch>
