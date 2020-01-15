@@ -68,7 +68,7 @@ const App = () => (
                   data-target=".navbar-collapse.show"
                 >
                   <Link className="nav-link" to="/Registration">
-                    線上報名及上傳論文
+                    線上報名及論文投稿
                   </Link>
                 </li>
                 <li
@@ -147,7 +147,6 @@ const App = () => (
 
         <Header />
         <Content />
-
         <footer className="py-5 bg-dark" id="footer">
           <div className="container">
             <p className="m-0 text-center text-white">
