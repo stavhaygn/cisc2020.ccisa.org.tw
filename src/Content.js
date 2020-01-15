@@ -9,6 +9,7 @@ import Activity from './Activity';
 import ConferenceGoal from './ConferenceGoal';
 import ConferenceAgenda from './ConferenceAgenda';
 import Organizer from './Organizer';
+import CoOrganizer from './CoOrganizer';
 import Traffic from './Traffic';
 
 const Content = () => (
@@ -20,6 +21,7 @@ const Content = () => (
     <Route path="/Registration" component={Registration} />
     <Route path="/Organization" component={Organization} />
     <Route path="/Organizer" component={Organizer} />
+    <Route path="/CoOrganizer" component={CoOrganizer} />
     <Route path="/Activity" component={Activity} />
     <Route path="/Traffic" component={Traffic} />
     <Route path="/Question" component={Question} />

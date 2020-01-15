@@ -85,9 +85,33 @@ const App = () => (
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                 >
-                  <Link className="nav-link" to="/Organizer">
-                    主辦單位
-                  </Link>
+                  <li
+                    className="nav-item dropdown"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse.show"
+                  >
+                    <a
+                      className="nav-link dropdown-toggle"
+                      href="/"
+                      id="navbarDropdownPortfolio"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      主辦及協辦單位
+                    </a>
+                    <div
+                      className="dropdown-menu dropdown-menu-right"
+                      aria-labelledby="navbarDropdownPortfolio"
+                    >
+                      <Link className="dropdown-item" to="/Organizer">
+                        主辦單位
+                      </Link>
+                      <Link className="dropdown-item" to="/CoOrganizer">
+                        協辦單位
+                      </Link>
+                    </div>
+                  </li>
                 </li>
                 <li
                   className="nav-item"

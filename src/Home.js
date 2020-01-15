@@ -100,7 +100,7 @@ const Home = () => (
           </a>
           <div className="card-body">
             <h4 className="card-title">
-              <a href="/">主辦單位</a>
+              <a href="/">主辦及協辦單位</a>
             </h4>
             <p className="card-text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
