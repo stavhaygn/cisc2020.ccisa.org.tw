@@ -67,6 +67,15 @@ const App = () => (
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                 >
+                  <Link className="nav-link" to="/CTF">
+                    CTF及海報徵選
+                  </Link>
+                </li>
+                <li
+                  className="nav-item"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                >
                   <Link className="nav-link" to="/Registration">
                     線上報名及論文投稿
                   </Link>
@@ -154,6 +163,15 @@ const App = () => (
                       </Link>
                     </div>
                   </li>
+                </li>
+                <li
+                  className="nav-item"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                >
+                  <Link className="nav-link" to="/Itinerary">
+                    參訪行程
+                  </Link>
                 </li>
                 <li
                   className="nav-item"

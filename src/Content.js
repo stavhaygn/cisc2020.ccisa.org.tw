@@ -4,6 +4,8 @@ import Home from './Home';
 import News from './News';
 import NewsDetail from './NewDetail';
 import Registration from './Registration';
+import CTF from './CTF';
+import Itinerary from './Itinerary';
 import Organization from './Organization';
 import Question from './Question';
 import Activity from './Activity';
@@ -22,6 +24,8 @@ const Content = () => (
     <Route path="/ConferenceGoal" component={ConferenceGoal} />
     <Route path="/ConferenceAgenda" component={ConferenceAgenda} />
     <Route path="/Registration" component={Registration} />
+    <Route path="/CTF" component={CTF} />
+    <Route path="/Itinerary" component={Itinerary} />
     <Route path="/Organization" component={Organization} />
     <Route path="/Organizer" component={Organizer} />
     <Route path="/CoOrganizer" component={CoOrganizer} />
