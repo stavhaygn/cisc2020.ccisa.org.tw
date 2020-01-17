@@ -6,7 +6,7 @@ const Home = () => (
       <td>
         <div>
           <h1 className="my-4">最新訊息</h1>
-          <div id="news_container">
+          <div className="news_container">
             <div className="row">
               <table className="table table-borderless news">
                 <thead>
@@ -63,9 +63,9 @@ const Home = () => (
         </div>
       </td>
       <td>
-        <div>
+        <div className="ml-5">
           <h1 className="my-4">重要時程</h1>
-          <div id="news_container">
+          <div className="news_container">
             <div className="row">
               <div className="news">
                 <p>活動期間：2020/5/19-22 共4天</p>
@@ -87,7 +87,7 @@ const Home = () => (
     </ul>
 
     <div className="text-center mb-3">
-      <img src="cfp.png" alt=""></img>
+      <img src="cfp.png" className="img-fluid" alt="ResponsiveImage"></img>
     </div>
   </div>
 );

@@ -38,7 +38,12 @@ const Organizer = () => (
       </div>
 
       <div className="col-md-4">
-        <img className="img-fluid" src="ccisa.png" alt="" width="100%" />
+        <img
+          src="ccisa.png"
+          className="img-fluid"
+          alt="ResponsiveImage"
+          width="100%"
+        />
         <p style={{ textAlign: 'center' }}>
           http://www.ccisa.org.tw/index.html
         </p>

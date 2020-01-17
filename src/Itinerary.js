@@ -31,7 +31,7 @@ const Itinerary = () => (
           <li>不要輕易、隨意觸摸獼猴。</li>
           <li>在與獼猴共處時，請勿隨意拿出食物。</li>
         </ol>
-        <img src="a.png" alt="" width="70%"></img>
+        <img src="a.png" className="img-fluid" alt="ResponsiveImage"></img>
         <hr />
       </div>
       <div className="col-lg-12 my-4">
@@ -53,7 +53,7 @@ const Itinerary = () => (
             如遇活動因受天候（下雨、颱風或風浪過大）及人力不可抗拒之因素影響，活動則取消，參加者可再擇另項活動參加。
           </li>
         </ol>
-        <img src="b.png" alt=""></img>
+        <img src="b.png" className="img-fluid" alt="ResponsiveImage"></img>
       </div>
     </div>
   </div>

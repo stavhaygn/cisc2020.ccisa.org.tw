@@ -27,15 +27,6 @@ const App = () => (
             <div className="collapse navbar-collapse" id="navbarResponsive">
               <ul className="navbar-nav ml-auto">
                 <li
-                  className="nav-item active"
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse.show"
-                >
-                  <Link className="nav-link" to="/News">
-                    最新訊息
-                  </Link>
-                </li>
-                <li
                   className="nav-item dropdown"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
@@ -90,37 +81,31 @@ const App = () => (
                   </Link>
                 </li>
                 <li
-                  className="nav-item"
+                  className="nav-item dropdown"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                 >
-                  <li
-                    className="nav-item dropdown"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse.show"
+                  <a
+                    className="nav-link dropdown-toggle"
+                    href="/"
+                    id="navbarDropdownPortfolio"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
                   >
-                    <a
-                      className="nav-link dropdown-toggle"
-                      href="/"
-                      id="navbarDropdownPortfolio"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      主辦及協辦單位
-                    </a>
-                    <div
-                      className="dropdown-menu dropdown-menu-right"
-                      aria-labelledby="navbarDropdownPortfolio"
-                    >
-                      <Link className="dropdown-item" to="/Organizer">
-                        主辦單位
-                      </Link>
-                      <Link className="dropdown-item" to="/CoOrganizer">
-                        協辦單位
-                      </Link>
-                    </div>
-                  </li>
+                    主辦及協辦單位
+                  </a>
+                  <div
+                    className="dropdown-menu dropdown-menu-right"
+                    aria-labelledby="navbarDropdownPortfolio"
+                  >
+                    <Link className="dropdown-item" to="/Organizer">
+                      主辦單位
+                    </Link>
+                    <Link className="dropdown-item" to="/CoOrganizer">
+                      協辦單位
+                    </Link>
+                  </div>
                 </li>
                 <li
                   className="nav-item"
@@ -131,38 +116,33 @@ const App = () => (
                     活動內容
                   </Link>
                 </li>
+
                 <li
-                  className="nav-item"
+                  className="nav-item dropdown"
                   data-toggle="collapse"
                   data-target=".navbar-collapse.show"
                 >
-                  <li
-                    className="nav-item dropdown"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse.show"
+                  <a
+                    className="nav-link dropdown-toggle"
+                    href="/"
+                    id="navbarDropdownPortfolio"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
                   >
-                    <a
-                      className="nav-link dropdown-toggle"
-                      href="/"
-                      id="navbarDropdownPortfolio"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      交通與住宿
-                    </a>
-                    <div
-                      className="dropdown-menu dropdown-menu-right"
-                      aria-labelledby="navbarDropdownPortfolio"
-                    >
-                      <Link className="dropdown-item" to="/Traffic">
-                        交通資訊
-                      </Link>
-                      <Link className="dropdown-item" to="/Accommodation">
-                        住宿資訊
-                      </Link>
-                    </div>
-                  </li>
+                    交通與住宿
+                  </a>
+                  <div
+                    className="dropdown-menu dropdown-menu-right"
+                    aria-labelledby="navbarDropdownPortfolio"
+                  >
+                    <Link className="dropdown-item" to="/Traffic">
+                      交通資訊
+                    </Link>
+                    <Link className="dropdown-item" to="/Accommodation">
+                      住宿資訊
+                    </Link>
+                  </div>
                 </li>
                 <li
                   className="nav-item"
@@ -189,6 +169,8 @@ const App = () => (
 
         <Header />
         <Content />
+
+        <div style={{ height: '8vh' }}></div>
         <footer className="py-5 bg-dark" id="footer">
           <div className="container">
             <p className="m-0 text-center text-white">
