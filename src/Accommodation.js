@@ -26,40 +26,322 @@ const Accommodation = () => (
       </div>
 
       <div className="col-lg-12 mb-4">
-        <h3>福容大飯店</h3>
-        <ul>
-          <li>地址：高雄市鹽埕區五福四路45號</li>
-          <li>電話：(07)531-7777</li>
-          <li>傳真：(07)521-1166</li>
-          <li>Email：rsvn_KH@fullon-hotels.com.tw</li>
-        </ul>
-        <hr />
+        <h2>聯络資訊</h2>
+        <div className="mt-4">
+          <table className="table">
+            <thead>
+              <tr>
+                <th scope="col">飯店名稱</th>
+                <th scope="col">聯絡人</th>
+                <th scope="col">連絡電話</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" rowSpan="2">
+                  福容大飯店
+                </th>
+                <td>陳彥文先生</td>
+                <td>0988570918</td>
+              </tr>
+              <tr>
+                <td>訂房組</td>
+                <td>07-5511188</td>
+              </tr>
+              <tr>
+                <th scope="row">翰品酒店</th>
+                <td>劉純蘭小姐</td>
+                <td>07-5614688</td>
+              </tr>
+              <tr>
+                <th scope="row">國賓大飯店</th>
+                <td>林幼芳小姐</td>
+                <td>07-2115201#2263</td>
+              </tr>
+              <tr>
+                <th scope="row">高雄漢王洲際飯店</th>
+                <td>李子渝小姐</td>
+                <td>07-5313131 #111</td>
+              </tr>
+              <tr>
+                <th scope="row">城市商旅駁二館</th>
+                <td>無特定聯絡人，直接電洽</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">城市商旅真愛館</th>
+                <td>無特定聯絡人，直接電洽</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">F商旅 愛河館</th>
+                <td>吳曉惠小姐</td>
+                <td>07-3323990</td>
+              </tr>
+              <tr>
+                <th scope="row">秝芯旅店駁二館</th>
+                <td>謝正輝先生</td>
+                <td>07-5219666</td>
+              </tr>
+              <tr>
+                <th scope="row" rowSpan="2">
+                  香富大飯店
+                </th>
+                <td>劉格成先生</td>
+                <td>0933-290961</td>
+              </tr>
+              <tr>
+                <td>訂房組</td>
+                <td>07-521-8770轉訂房</td>
+              </tr>
+              <tr>
+                <th scope="row">帝豪飯店愛河館</th>
+                <td>胡小姐</td>
+                <td>07-972-3759</td>
+              </tr>
+              <tr>
+                <th scope="row">賀喔精緻文旅</th>
+                <td>吳小姐(Jamie)</td>
+                <td>07-5519292</td>
+              </tr>
+              <tr>
+                <th scope="row">寒軒飯店（四維）</th>
+                <td>王美淑小姐</td>
+                <td>07-3308800 #6084</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div className="col-lg-12 mb-4">
+        <h2>飯店資訊</h2>
       </div>
       <div className="col-lg-12 mb-4">
-        <h3>華王大飯店</h3>
-        <ul>
-          <li>地址：高雄市鹽埕區五福四路42號</li>
-          <li>電話：(07)551-1515</li>
-          <li>傳真：(07)551-0403</li>
-          <li> Email：service@hotelkingdom.com.tw</li>
-        </ul>
+        <h4>帝豪飯店-愛河館</h4>
+        <div className="mt-2">
+          <ul>
+            <li>地址：803高雄市鹽埕區新興街67號</li>
+            <li>電話：07-972-3788</li>
+            <li>訂房方式：電話訂房</li>
+            <div className="mt-4">
+              <table className="table">
+                <thead>
+                  <tr>
+                    <th scope="col">住宿專案</th>
+                    <th scope="col">價格</th>
+                    <th scope="col">格局</th>
+                    <th scope="col">是否提供早點</th>
+                    <th scope="col">備註</th>
+                  </tr>
+                  <tr>
+                    <td>標準雙人房</td>
+                    <td>$1,480</td>
+                    <td>8-9坪，兩小床</td>
+                    <td>自助式早餐</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>標準三人房</td>
+                    <td>$1.980</td>
+                    <td>8-9坪，三小床</td>
+                    <td>自助式早餐</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>標準四人房</td>
+                    <td>$2,480</td>
+                    <td>10-12坪，兩大床</td>
+                    <td>自助式早餐</td>
+                    <td></td>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <div>房價已含稅及服務費</div>
+          </ul>
+        </div>
         <hr />
       </div>
+
       <div className="col-lg-12 mb-4">
-        <h3>城市商旅高雄真愛館</h3>
-        <ul>
-          <li>地址：高雄市鹽埕區大義街1號</li>
-          <li>電話：(07)521-5116</li>
-        </ul>
+        <h4>福容飯店</h4>
+        <div className="mt-2">
+          <ul>
+            <li>地址：高雄市鹽埕區五福四路45號</li>
+            <li>電話：(07)531-7777</li>
+            <li>傳真：(07)521-1166</li>
+            <li>Email：rsvn_KH@fullon-hotels.com.tw</li>
+            <li>訂房預定單：下載預定單</li>
+            <li>訂房方式：活動20天前回傳訂房單</li>
+            <li>合作優惠：此優惠僅限與會貴賓活動當週入住</li>
+            <div className="mt-4">
+              <table className="table">
+                <thead>
+                  <tr>
+                    <th scope="col">住宿專案</th>
+                    <th scope="col">價格</th>
+                    <th scope="col">格局</th>
+                    <th scope="col">是否提供早點</th>
+                    <th scope="col">備註</th>
+                  </tr>
+                  <tr>
+                    <td>精緻客房</td>
+                    <td>$2,000</td>
+                    <td>10坪，兩小床或一大床</td>
+                    <td>自助式早餐</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>豪華雙床房</td>
+                    <td>$2,000</td>
+                    <td>10坪，市景兩中床</td>
+                    <td>自助式早餐</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>景觀套房</td>
+                    <td>$4,000</td>
+                    <td>13坪，港景一大床</td>
+                    <td>自助式早餐</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>行政客房</td>
+                    <td>$3,000</td>
+                    <td>10坪，市景兩小床或一大床</td>
+                    <td>自助式早餐</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>行政客房</td>
+                    <td>$3,400</td>
+                    <td>10坪，港景兩小床或一大床</td>
+                    <td>自助式早餐</td>
+                    <td></td>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <div>免費健身房、三溫暖、游泳池</div>
+            <div>免費停車(1房限1車)</div>
+            <div>館內用餐9折</div>
+            <div>收費自助洗衣</div>
+          </ul>
+        </div>
         <hr />
       </div>
+
       <div className="col-lg-12 mb-4">
-        <h3>城市商旅駁二館</h3>
-        <ul>
-          <li>地址：高雄市鹽埕區公園二路83號</li>
-          <li>電話：(07)532-2777</li>
-        </ul>
+        <h4>F商旅 愛河館</h4>
+        <div className="mt-2">
+          <ul>
+            <li>地址：高雄市鹽埕區大智路129號</li>
+            <li>電話：(07)532-3333</li>
+            <div className="mt-4">
+              <table className="table">
+                <thead>
+                  <tr>
+                    <th scope="col">住宿專案</th>
+                    <th scope="col">價格</th>
+                    <th scope="col">格局</th>
+                    <th scope="col">是否提供早點</th>
+                    <th scope="col">備註</th>
+                  </tr>
+                  <tr>
+                    <td>精緻二人房</td>
+                    <td>$2,300</td>
+                    <td>一大床</td>
+                    <td>自助式早餐</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>雅緻二人房</td>
+                    <td>$2,500</td>
+                    <td>二小床</td>
+                    <td>自助式早餐</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>雅緻三人房</td>
+                    <td>$2,600</td>
+                    <td>一大一小床或三小床</td>
+                    <td>自助式早餐</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>溫馨四人房</td>
+                    <td>$3,100</td>
+                    <td>二大床</td>
+                    <td>自助式早餐</td>
+                    <td></td>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <div>車位有限</div>
+            <div>訂房時請說明中山大學配合方案</div>
+          </ul>
+        </div>
         <hr />
+      </div>
+
+      <div className="col-lg-12 mb-4">
+        <h4>翰品酒店</h4>
+        <div className="mt-2">
+          <ul>
+            <li>地址：高雄市鹽埕區大仁路43號</li>
+            <li>電話：(07)521-3699</li>
+            <li>傳真：(07)521-7128</li>
+            <li>Email：kh-re@ldchotels.com</li>
+            <li>訂房預定單：下載預定單</li>
+            <li>訂房方式：回傳訂房單</li>
+            <div className="mt-4">
+              <table className="table">
+                <thead>
+                  <tr>
+                    <th scope="col">住宿專案</th>
+                    <th scope="col">價格</th>
+                    <th scope="col">格局</th>
+                    <th scope="col">是否提供早點</th>
+                    <th scope="col">備註</th>
+                  </tr>
+                  <tr>
+                    <td>雅緻一中床</td>
+                    <td>$2,300</td>
+                    <td>6-7坪，一中床</td>
+                    <td>自助式早餐</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>豪華一大床</td>
+                    <td>$2,800</td>
+                    <td>10坪，一大床</td>
+                    <td>自助式早餐</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>雅緻兩小床</td>
+                    <td>$2,600</td>
+                    <td>6-7坪，兩小床</td>
+                    <td>自助式早餐</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>雅緻家庭房</td>
+                    <td>$3,000</td>
+                    <td>10坪，兩中床</td>
+                    <td>自助式早餐</td>
+                    <td></td>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <div>訂房單之信用卡資料是保證訂房所使用，亦可到店付款</div>
+            <div>免費健身房</div>
+            <div>免費自助洗衣區（開放時間為早上07：00～晚上22：00）</div>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
