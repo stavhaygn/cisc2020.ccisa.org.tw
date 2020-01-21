@@ -12,7 +12,7 @@ const Itinerary = () => (
     </ol>
 
     <div className="row">
-      <div className="col-lg-12 my-4">
+      <div className="col-lg-12 mb-4">
         <h3 className="mb-3">參訪活動A-柴山生態尋奇 </h3>
         <h5 className="mb-3">地點：柴山(近龍泉寺)</h5>
         <h5 className="mb-3">時間：約2.5小時</h5>
@@ -34,7 +34,7 @@ const Itinerary = () => (
         <img src="a.png" className="img-fluid" alt="ResponsiveImage"></img>
         <hr />
       </div>
-      <div className="col-lg-12 my-4">
+      <div className="col-lg-12 mb-4">
         <h3 className="mb-3">參訪活動B-西子灣海域體驗規劃 </h3>
         <h5 className="mb-3">地點：中山大學海域活動中心</h5>
         <h5 className="mb-3">時間：約3小時</h5>
