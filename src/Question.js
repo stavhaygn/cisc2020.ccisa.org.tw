@@ -5,7 +5,7 @@ const QA = ({ question }) => {
   const { name, subject, content, time, response } = question;
 
   return (
-    <div className="card">
+    <div className="card mb-4">
       <div className="card-header" role="tab" id="headingOne">
         <h5 className="mb-0">
           <a
@@ -26,51 +26,30 @@ const QA = ({ question }) => {
         aria-labelledby="headingOne"
       >
         <div className="card-body">
-          <table>
-            <tbody>
-              <tr>
-                <td>
-                  <h1 style={{ color: '#87CEFA', marginLeft: '10px' }}>Q.</h1>
-                </td>
-                <td
-                  style={{
-                    marginRight: '3%',
-                    marginBottom: '0px',
-                    width: '100%',
-                  }}
-                >
-                  <ul style={{ marginRight: '3%', marginBottom: '0px' }}>
-                    <p>
-                      {name} {time}：
-                    </p>
-                    <p style={{ marginBottom: '0px' }}>{content}</p>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div className="row">
+            <div className="col-md-1 text-primary">
+              <h1>Q.</h1>
+            </div>
+            <div className="col-md-11">
+              <p>
+                {name} {time}：
+              </p>
+              <p>{content}</p>
+            </div>
+          </div>
           <hr />
           {response !== undefined ? (
-            <table>
-              <tbody>
-                <tr>
-                  <td>
-                    <h1 style={{ color: '#FF6347', marginLeft: '10px' }}>A.</h1>
-                  </td>
-                  <td
-                    style={{
-                      marginRight: '3%',
-                      marginBottom: '0px',
-                      width: '100%',
-                    }}
-                  >
-                    <ul style={{ marginRight: '3%', marginBottom: '0px' }}>
-                      <p style={{ marginBottom: '0px' }}>{response.content}</p>
-                    </ul>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div className="row">
+              <div className="col-md-1 text-info">
+                <h1>A.</h1>
+              </div>
+              <div className="col-md-11">
+                <p>
+                  {response.name} {response.time}：
+                </p>
+                <p>{response.content}</p>
+              </div>
+            </div>
           ) : (
               <div></div>
             )}
@@ -96,7 +75,6 @@ const MessageBoard = ({ submitInput }) => {
       ...inputs,
       [event.target.name]: event.target.value,
     }));
-    console.log('123');
   };
 
   return (
@@ -194,7 +172,7 @@ const Question = () => {
   ]);
 
   const fetchQuestions = async () => {
-    const result = await axios('/api/queryQuestions');
+    const result = await axios('http://localhost/api/queryQuestions');
     setQuestions(result.data);
   };
   useEffect(() => {
