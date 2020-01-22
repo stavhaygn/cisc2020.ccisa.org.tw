@@ -13,16 +13,13 @@ const Traffic = () => (
 
     <div className="row">
       <div className="col-lg-12 mb-4">
-        <iframe
-          title="map"
-          width="100%"
-          height="400px"
-          frameBorder="0"
-          scrolling="no"
-          marginHeight="0"
-          marginWidth="0"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3682.6809066223595!2d120.26254831491202!3d22.628387985154127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-TW!2stw!4v1571991467753!5m2!1szh-TW!2stw"
-        ></iframe>
+        <div className="embed-responsive embed-responsive-21by9 mt-3">
+          <iframe
+            title="tutorial"
+            className="embed-responsive-item"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3096.744599856512!2d120.26546076636278!3d22.628768504738463!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e04059155b987%3A0xe149e10185f1be63!2sNational%20Sun%20Yat-Sen%20University%20Library!5e0!3m2!1sen!2stw!4v1579670997032!5m2!1sen!2stw"
+          ></iframe>
+        </div>
       </div>
 
       <div className="col-lg-12 mb-4">
@@ -39,6 +36,14 @@ const Traffic = () => (
           </li>
           <li>
             公車路線查詢：高雄市公共車船管理處（高雄市公車語音查詢電話749-7100）
+          </li>
+          <li>
+            <a href="https://ibus.tbkc.gov.tw/bus/">高雄市公車資訊</a>
+          </li>
+          <li>
+            <a href="https://safety-oga.nsysu.edu.tw/p/406-1296-204069,r11.php?Lang=zh-tw">
+              校園公車資訊
+            </a>
           </li>
         </ul>
         <hr />
@@ -211,7 +216,6 @@ const Traffic = () => (
           </li>
           <li>乘坐計程車約20分鐘路程，車資約200~250元左右。</li>
         </ul>
-        <hr />
       </div>
     </div>
   </div>

@@ -176,43 +176,6 @@ const Activity = () => (
           </div>
         </div>
       </div>
-
-      {/* <div className="card">
-        <div className="card-header" role="tab" id="headingFour">
-          <h5 className="mb-0">
-            <a
-              className="collapsed"
-              data-toggle="collapse"
-              data-parent="#accordion"
-              href="#collapseFour"
-              aria-expanded="false"
-              aria-controls="collapseFour"
-            >
-              重要時程
-            </a>
-          </h5>
-        </div>
-        <div
-          id="collapseFour"
-          className="collapse show"
-          role="tabpanel"
-          aria-labelledby="headingFour"
-        >
-          <div className="card-body">
-            <p>活動期間：2020/5/19-22 共4天</p>
-            <p>活動地點：國立中山大學 (高雄市鼓山區蓮海路70號)</p>
-            <p>重要日期：</p>
-            <ul>
-              <li>論文投稿截止日：2020/4/6</li>
-              <li>通知接受日：2020/5/4</li>
-              <li>論文完稿截稿日：2020/5/10</li>
-              <li>早鳥繳費期限：2020/5/10</li>
-              <li>一般繳費期限：2020/5/20</li>
-              <li>資安會議舉辦日期：2020/5/19-22</li>
-            </ul>
-          </div>
-        </div>
-      </div> */}
     </div>
   </div>
 );

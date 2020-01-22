@@ -8,7 +8,7 @@ const App = () => (
   <React.Fragment>
     <Router>
       <div id="content-wrap">
-        <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-primary fixed-top">
           <div className="container">
             <a className="navbar-brand" href="/">
               第三十屆全國資訊安全會議
@@ -142,6 +142,12 @@ const App = () => (
                     <Link className="dropdown-item" to="/Accommodation">
                       住宿資訊
                     </Link>
+                    <Link className="dropdown-item" to="/CampusMap">
+                      校園地圖
+                    </Link>
+                    <Link className="dropdown-item" to="/Travel">
+                      高雄旅遊資訊
+                    </Link>
                   </div>
                 </li>
                 <li
@@ -171,7 +177,11 @@ const App = () => (
         <Content />
 
         <div style={{ height: '8vh' }}></div>
-        <footer className="py-5 bg-dark" id="footer">
+        <footer
+          className="py-5"
+          id="footer"
+          style={{ backgroundColor: '#224162' }}
+        >
           <div className="container">
             <p className="m-0 text-center text-white">
               電話：80424高雄市鼓山區蓮海路70號 電資大樓EC-2017 |
@@ -179,7 +189,9 @@ const App = () => (
             </p>
             <p className="m-0 text-center text-white">
               信箱：cisc2020@ccisa.org.tw Copyright &copy; 2020{' '}
-              <a href="https://www.ccisa.org.tw/">中華民國資訊安全學會</a>
+              <a className="text-info" href="https://www.ccisa.org.tw/">
+                中華民國資訊安全學會
+              </a>
             </p>
           </div>
         </footer>

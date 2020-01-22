@@ -8,6 +8,14 @@
   font-family: 'Noto Sans TC', 'Roboto';
 }
 
+.bg-primary {
+  background-color: #224162 !important;
+}
+
+.text-info {
+  color:  #FFC650 !important;
+}
+
 .container {
   max-width: 1280px;
 }
@@ -45,10 +53,10 @@ h1 {
   margin-bottom: 15px;
 }
 
-
 #keywords thead {
   background: #c9dff0;
 }
+
 #keywords thead tr th { 
   font-weight: bold;
   padding: 7px 20px;
