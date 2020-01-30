@@ -1,6 +1,21 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
+const Item = props => (
+  <div
+    className={props.active ? 'carousel-item active' : 'carousel-item'}
+    style={{
+      backgroundImage: props.backgroundImage,
+    }}
+  >
+    <div className="carousel-caption d-none d-md-block">
+      <h2>Cryptology and Information Security Conference 2020</h2>
+      <h4>19-22 May, 2020</h4>
+      <h4>National Sun Yat-sen University</h4>
+    </div>
+  </div>
+);
+
 const Slide = () => (
   <header>
     <div
@@ -15,31 +30,20 @@ const Slide = () => (
           className="active"
         ></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        {/* <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> */}
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
       </ol>
       <div className="carousel-inner" role="listbox">
-        <div
-          className="carousel-item active"
-          style={{
-            backgroundImage: "url('slide1.jpg')",
-          }}
-        >
-          <div className="carousel-caption d-none d-md-block">
-            <h3>中山大學</h3>
-            <p></p>
-          </div>
-        </div>
-        <div
-          className="carousel-item"
-          style={{
-            backgroundImage: "url('slide2.jpg')",
-          }}
-        >
-          <div className="carousel-caption d-none d-md-block">
-            <h3>中山大學</h3>
-            <p></p>
-          </div>
-        </div>
+        <Item active backgroundImage="url('slide1.jpg')" />
+        <Item backgroundImage="url('slide2.jpg')" />
+        <Item backgroundImage="url('slide3.jpg')" />
+        <Item backgroundImage="url('slide4.jpg')" />
+        <Item backgroundImage="url('slide5.jpg')" />
+        <Item backgroundImage="url('slide6.jpg')" />
+        <Item backgroundImage="url('slide7.jpg')" />
       </div>
       <a
         className="carousel-control-prev"

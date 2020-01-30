@@ -172,7 +172,7 @@ const Question = () => {
   ]);
 
   const fetchQuestions = async () => {
-    const result = await axios('http://localhost/api/queryQuestions');
+    const result = await axios('/api/queryQuestions');
     setQuestions(result.data);
   };
   useEffect(() => {
