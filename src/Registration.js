@@ -11,7 +11,7 @@ const Registration = () => (
       <li className="breadcrumb-item active">論文投稿</li>
     </ol>
     <div className="row">
-      <div className="col-lg-12 my-b">
+      <div className="col-lg-12 my-4">
         <h3 className="mb-3">論文主題</h3>
         <p>
           全國資安會議所發表之論文，將採公開方式徵求稿件，並經一定之審稿制度審核。研討會論文內容包含（但不限於）下列主題，歡迎各位先進踴躍投稿。
@@ -64,8 +64,12 @@ const Registration = () => (
           mm，單行間距，雙欄文章，無須列印頁碼，每篇論文以 12 頁為限，英文字體
           Times New Roman 10點，中文字體標楷體 10
           點。請將論文全文存檔為PDF檔案於投稿截止日期前上傳至本會議網站，詳細傳送方式請參考大會網站說明。
-          <a href="CISC2020_format-0121rev.doc">論文格式範例</a>
         </p>
+        <a href="CISC2020_format-0121rev.doc" download>
+          <button type="button" className="btn btn-success">
+            論文格式範例下載
+          </button>
+        </a>
       </div>
       <div className="col-lg-12 mb-4">
         <h3 className="mb-3">審查機制</h3>
@@ -77,15 +81,20 @@ const Registration = () => (
       <div className="col-lg-12 mb-4">
         <h3 className="mb-3">上傳教學</h3>
         <a href="https://easychair.org/conferences/?conf=apri2018">
-          論文上傳連结
+          論文上傳連結
         </a>
-        <div className="embed-responsive embed-responsive-1by1 mt-3">
+        <div className="embed-responsive embed-responsive-1by1 my-3">
           <iframe
             title="tutorial"
             className="embed-responsive-item"
             src="EasyChair-tutorial-Chinese-CISC2020.pdf"
           ></iframe>
         </div>
+        <a href="EasyChair-tutorial-Chinese-CISC2020.pdf" download>
+          <button type="button" className="btn btn-success">
+            上傳教學下載
+          </button>
+        </a>
       </div>
     </div>
   </div>

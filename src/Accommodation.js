@@ -1,4 +1,9 @@
 import React from 'react';
+const BlankA = props => (
+  <a href={props.href} target="_blank" rel="noopener noreferrer">
+    {props.children}
+  </a>
+);
 
 const Accommodation = () => (
   <div className="container">
@@ -27,10 +32,17 @@ const Accommodation = () => (
     </div>
     <div className="row">
       <div className="col-lg-12 mb-4">
-        <h3>帝豪飯店-愛河館</h3>
+        <BlankA href="https://www.loveriverhotel.com.tw/">
+          <h3>帝豪飯店-愛河館</h3>
+        </BlankA>
         <div className="mt-2">
           <ul>
-            <li>地址：803高雄市鹽埕區新興街67號</li>
+            <li>
+              地址：
+              <BlankA href="https://goo.gl/maps/mfUAqf8mYwGzKxUs6">
+                803高雄市鹽埕區新興街67號
+              </BlankA>
+            </li>
             <li>電話：07-972-3788</li>
             <li>訂房方式：電話訂房</li>
             <div className="mt-4">
@@ -77,13 +89,26 @@ const Accommodation = () => (
     </div>
     <div className="row">
       <div className="col-lg-12 mb-4">
-        <h3>福容飯店</h3>
+        <BlankA href="https://www.fullon-hotels.com.tw/kh/">
+          <h3>福容飯店</h3>
+        </BlankA>
+
         <div className="mt-2">
           <ul>
-            <li>地址：高雄市鹽埕區五福四路45號</li>
+            <li>
+              地址：
+              <BlankA href="https://goo.gl/maps/vwxst8bfcopR4xMo9">
+                高雄市鹽埕區五福四路45號
+              </BlankA>
+            </li>
             <li>電話：(07)531-7777</li>
             <li>傳真：(07)521-1166</li>
-            <li>Email：rsvn_KH@fullon-hotels.com.tw</li>
+            <li>
+              Email：
+              <a href="mailto:rsvn_KH@fullon-hotels.com.tw">
+                rsvn_KH@fullon-hotels.com.tw
+              </a>
+            </li>
             <li>訂房預定單：下載預定單</li>
             <li>訂房方式：活動20天前回傳訂房單</li>
             <li>合作優惠：此優惠僅限與會貴賓活動當週入住</li>
@@ -148,10 +173,17 @@ const Accommodation = () => (
     </div>
     <div className="row">
       <div className="col-lg-12 mb-4">
-        <h3>F商旅 愛河館</h3>
+        <BlankA href="http://kaohsiung.fhotels.com.tw/">
+          <h3>F商旅 愛河館</h3>
+        </BlankA>
         <div className="mt-2">
           <ul>
-            <li>地址：高雄市鹽埕區大智路129號</li>
+            <li>
+              地址：
+              <BlankA href="https://goo.gl/maps/gXME4QYhSwyNjzeYA">
+                高雄市鹽埕區大智路129號
+              </BlankA>
+            </li>
             <li>電話：(07)532-3333</li>
             <div className="mt-4">
               <table className="table">
@@ -205,13 +237,23 @@ const Accommodation = () => (
     </div>
     <div className="row">
       <div className="col-lg-12 mb-4">
-        <h3>翰品酒店</h3>
+        <BlankA href="https://kaohsiung.chateaudechine.com/tw/index">
+          <h3>翰品酒店</h3>
+        </BlankA>
         <div className="mt-2">
           <ul>
-            <li>地址：高雄市鹽埕區大仁路43號</li>
+            <li>
+              地址：
+              <BlankA href="https://goo.gl/maps/MUzJ5AbrjVjb8dCu7">
+                高雄市鹽埕區大仁路43號
+              </BlankA>
+            </li>
             <li>電話：(07)521-3699</li>
             <li>傳真：(07)521-7128</li>
-            <li>Email：kh-re@ldchotels.com</li>
+            <li>
+              Email：
+              <a href="mailto:kh-re@ldchotels.com">kh-re@ldchotels.com</a>
+            </li>
             <li>訂房預定單：下載預定單</li>
             <li>訂房方式：回傳訂房單</li>
             <div className="mt-4">
@@ -266,13 +308,23 @@ const Accommodation = () => (
     </div>
     <div className="row">
       <div className="col-lg-12 mb-4">
-        <h3>香富大飯店</h3>
+        <BlankA href="http://www.cf-hotel.com/kh/">
+          <h3>香富大飯店</h3>
+        </BlankA>
         <div className="mt-2">
           <ul>
-            <li>地址：高雄市鹽埕區光榮街83號</li>
+            <li>
+              地址：
+              <BlankA href="https://goo.gl/maps/6jnt3xk7TosdmtaGA">
+                高雄市鹽埕區光榮街83號
+              </BlankA>
+            </li>
             <li>電話：(07)521-8770 轉訂房</li>
             <li>傳真：(07)521-8771</li>
-            <li>Email：sf.hotel3@gmail.com</li>
+            <li>
+              Email：
+              <a href="mailto:sf.hotel3@gmail.com">sf.hotel3@gmail.com</a>
+            </li>
             <div className="mt-4">
               <table className="table">
                 <thead>
