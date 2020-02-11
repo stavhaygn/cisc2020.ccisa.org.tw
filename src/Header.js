@@ -5,7 +5,8 @@ const Item = props => (
   <div
     className={props.active ? 'carousel-item active' : 'carousel-item'}
     style={{
-      backgroundImage: props.backgroundImage,
+      backgroundImage: props.src,
+      backgroundPosition: `100% ${props.positionY}`,
     }}
   >
     <div className="carousel-caption d-none d-md-block">
@@ -37,13 +38,13 @@ const Slide = () => (
         <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
       </ol>
       <div className="carousel-inner" role="listbox">
-        <Item active backgroundImage="url('slide1.jpg')" />
-        <Item backgroundImage="url('slide2.jpg')" />
-        <Item backgroundImage="url('slide3.jpg')" />
-        <Item backgroundImage="url('slide4.jpg')" />
-        <Item backgroundImage="url('slide5.jpg')" />
-        <Item backgroundImage="url('slide6.jpg')" />
-        <Item backgroundImage="url('slide7.jpg')" />
+        <Item active src="url('slide1.jpg')" positionY="60%" />
+        <Item src="url('slide2.jpg')" positionY="80%" />
+        <Item src="url('slide3.jpg')" positionY="55%" />
+        <Item src="url('slide4.jpg')" positionY="20%" />
+        <Item src="url('slide5.jpg')" positionY="50%" />
+        <Item src="url('slide6.jpg')" positionY="0%" />
+        <Item src="url('slide7.jpg')" positionY="80%" />
       </div>
       <a
         className="carousel-control-prev"

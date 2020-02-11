@@ -63,6 +63,7 @@ const App = () => (
                     CTF及海報徵選
                   </Link>
                 </li>
+
                 <li
                   className="nav-item"
                   data-toggle="collapse"
@@ -117,7 +118,6 @@ const App = () => (
                     活動內容
                   </Link>
                 </li>
-
                 <li
                   className="nav-item dropdown"
                   data-toggle="collapse"
