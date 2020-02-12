@@ -7,6 +7,7 @@ const Item = props => (
     style={{
       backgroundImage: props.src,
       backgroundPosition: `100% ${props.positionY}`,
+      height: '42vh',
     }}
   >
     <div className="carousel-caption d-none d-md-block">
@@ -38,11 +39,11 @@ const Slide = () => (
         <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
       </ol>
       <div className="carousel-inner" role="listbox">
-        <Item active src="url('slide1.jpg')" positionY="60%" />
+        <Item active src="url('slide1.jpg')" positionY="65%" />
         <Item src="url('slide2.jpg')" positionY="80%" />
-        <Item src="url('slide3.jpg')" positionY="55%" />
-        <Item src="url('slide4.jpg')" positionY="20%" />
-        <Item src="url('slide5.jpg')" positionY="50%" />
+        <Item src="url('slide3.jpg')" positionY="70%" />
+        <Item src="url('slide4.jpg')" positionY="60%" />
+        <Item src="url('slide5.jpg')" positionY="60%" />
         <Item src="url('slide6.jpg')" positionY="0%" />
         <Item src="url('slide7.jpg')" positionY="80%" />
       </div>
