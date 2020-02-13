@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserView, MobileView } from 'react-device-detect';
 import Header from './Header';
 import Content from './Content';
 import './style.css';
@@ -11,7 +12,7 @@ const App = () => (
         <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-primary fixed-top">
           <div className="container">
             <a className="navbar-brand" href="/">
-              <img src="nsysu_logo.png" width="54" />
+              <img src="nsysu_logo.png" width="54" alt="Image" />
               第三十屆全國資訊安全會議
             </a>
             <button
@@ -176,24 +177,48 @@ const App = () => (
 
         <Header />
         <Content />
+        <BrowserView>
+          <div style={{ height: '8vh' }}></div>
+        </BrowserView>
+        <MobileView>
+          <div style={{ height: '14vh' }}></div>
+        </MobileView>
 
-        <div style={{ height: '8vh' }}></div>
         <footer
           className="py-5"
           id="footer"
           style={{ backgroundColor: '#224162' }}
         >
           <div className="container">
-            <p className="m-0 text-center text-white">
-              電話：80424高雄市鼓山區蓮海路70號 電資大樓EC-2017 |
-              電話：07-5250558
-            </p>
-            <p className="m-0 text-center text-white">
-              信箱：cisc2020@ccisa.org.tw Copyright &copy; 2020{' '}
-              <a className="text-info" href="https://www.ccisa.org.tw/">
-                中華民國資訊安全學會
-              </a>
-            </p>
+            <BrowserView>
+              <p className="m-0 text-center text-white">
+                地址：80424高雄市鼓山區蓮海路70號 電資大樓EC-2017 |
+                電話：07-5250558
+              </p>
+              <p className="m-0 text-center text-white">
+                信箱：cisc2020@ccisa.org.tw Copyright &copy; 2020{' '}
+                <a className="text-info" href="https://www.ccisa.org.tw/">
+                  中華民國資訊安全學會
+                </a>
+              </p>
+            </BrowserView>
+            <MobileView>
+              <p className="m-0 text-center text-white">
+                地址：80424高雄市鼓山區蓮海路70號
+              </p>
+              <p className="m-0 text-center text-white">
+                電資大樓EC-2017 | 電話：07-5250558
+              </p>
+              <p className="m-0 text-center text-white">
+                信箱：cisc2020@ccisa.org.tw
+              </p>
+              <p className="m-0 text-center text-white">
+                Copyright &copy; 2020{' '}
+                <a className="text-info" href="https://www.ccisa.org.tw/">
+                  中華民國資訊安全學會
+                </a>
+              </p>
+            </MobileView>
           </div>
         </footer>
       </div>
