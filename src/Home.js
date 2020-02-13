@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserView, MobileView } from 'react-device-detect';
 const Item = props => (
   <tr>
     <td style={{ color: '#FFC650' }}>
@@ -69,11 +70,21 @@ const Home = () => (
           </div>
         </div>
       </div>
-      <div className="row justify-content-center">
-        <div className="col-md-8">
-          <img src="cfp.png" className="img-fluid" alt="ResponsiveImage" />
+
+      <BrowserView>
+        <div className="row justify-content-center">
+          <div className="col-md-8">
+            <img src="cfp.jpg" className="img-fluid" alt="ResponsiveImage" />
+          </div>
         </div>
-      </div>
+      </BrowserView>
+      <MobileView>
+        <div className="row justify-content-center">
+          <div className="col-md-8">
+            <img src="mcfp.jpg" className="img-fluid" alt="ResponsiveImage" />
+          </div>
+        </div>
+      </MobileView>
     </div>
   </div>
 );
