@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container } from './Utils';
 
-const CTF = () => (
-  <Container title="CTF競賽">
+const Poster = () => (
+  <Container title="海報徵選">
     <h4>
       建構中，請稍後
       <span role="img" aria-label="Construction">
@@ -12,4 +12,4 @@ const CTF = () => (
   </Container>
 );
 
-export default CTF;
+export default Poster;

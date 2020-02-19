@@ -1,17 +1,9 @@
 import React from 'react';
+import { Container, Row } from './Utils';
 
 const Itinerary = () => (
-  <div className="container">
-    <h1 className="mt-4 mb-3">參訪行程</h1>
-
-    <ol className="breadcrumb">
-      <li className="breadcrumb-item">
-        <a href="/">Home</a>
-      </li>
-      <li className="breadcrumb-item active">參訪行程</li>
-    </ol>
-
-    <div className="row">
+  <Container title="參訪行程" path={['會議議程', '參訪行程']}>
+    <Row>
       <div className="col-md-8 my-4">
         <h3 className="mb-3">參訪活動A-柴山生態尋奇 </h3>
         <h5 className="mb-3">地點：柴山(近龍泉寺)</h5>
@@ -35,9 +27,9 @@ const Itinerary = () => (
       <div className="col-md-4 my-4">
         <img src="a.png" className="img-fluid" alt="ResponsiveImage" />
       </div>
-    </div>
+    </Row>
     <hr />
-    <div className="row">
+    <Row>
       <div className="col-md-4 my-4">
         <img src="b.png" className="img-fluid" alt="ResponsiveImage" />
       </div>
@@ -61,8 +53,8 @@ const Itinerary = () => (
           </li>
         </ol>
       </div>
-    </div>
-  </div>
+    </Row>
+  </Container>
 );
 
 export default Itinerary;

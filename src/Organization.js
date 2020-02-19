@@ -1,16 +1,8 @@
 import React from 'react';
+import { Container } from './Utils';
 
 const Organization = () => (
-  <div className="container">
-    <h1 className="mt-4 mb-3">大會組織</h1>
-
-    <ol className="breadcrumb">
-      <li className="breadcrumb-item">
-        <a href="index.html">Home</a>
-      </li>
-      <li className="breadcrumb-item active">大會組織</li>
-    </ol>
-
+  <Container title="大會組織">
     <hr />
 
     <p className="lead">— 會議組織 —</p>
@@ -290,7 +282,7 @@ const Organization = () => (
     </ul>
 
     <hr />
-  </div>
+  </Container>
 );
 
 export default Organization;

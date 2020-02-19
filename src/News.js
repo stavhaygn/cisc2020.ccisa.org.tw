@@ -1,7 +1,8 @@
 import React from 'react';
+import { Container } from './Utils';
 
 const News = () => (
-  <div className="container">
+  <Container>
     <h1 className="mt-4 mb-3">最新訊息</h1>
     <ol className="breadcrumb">
       <li className="breadcrumb-item">
@@ -23,7 +24,7 @@ const News = () => (
             <b>2020/1/16</b>
           </td>
           <td>
-            <a href="/Registration">論文投稿已開始，歡迎大家踴躍投稿。</a>
+            <a href="/Paper">論文投稿已開始，歡迎大家踴躍投稿。</a>
           </td>
         </tr>
         <tr>
@@ -44,7 +45,7 @@ const News = () => (
         </tr>
       </tbody>
     </table>
-  </div>
+  </Container>
 );
 
 export default News;

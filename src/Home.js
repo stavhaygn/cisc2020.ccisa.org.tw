@@ -1,5 +1,7 @@
 import React from 'react';
 import { BrowserView, MobileView } from 'react-device-detect';
+import { Row } from './Utils';
+
 const Item = props => (
   <tr>
     <td style={{ color: '#FFC650' }}>
@@ -13,7 +15,7 @@ const Item = props => (
 
 const Home = () => (
   <div className="container">
-    <div className="row">
+    <Row>
       <div className="col-md-6 mb-5">
         <h1 className="my-4">最新訊息</h1>
         <div className="card" style={{ backgroundColor: '#F7F7F7' }}>
@@ -26,7 +28,7 @@ const Home = () => (
                 </tr>
               </thead>
               <tbody>
-                <Item date="2020/1/16" href="/Registration">
+                <Item date="2020/1/16" href="/Paper">
                   論文投稿已開始，歡迎大家踴躍投稿。
                 </Item>
                 <Item date="2020/1/16" href="/CTF">
@@ -85,7 +87,7 @@ const Home = () => (
           </div>
         </div>
       </MobileView>
-    </div>
+    </Row>
   </div>
 );
 

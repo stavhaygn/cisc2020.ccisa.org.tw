@@ -1,17 +1,9 @@
 import React from 'react';
+import { Container, Row, BlankA } from './Utils';
 
 const Traffic = () => (
-  <div className="container">
-    <h1 className="mt-4 mb-3">交通資訊</h1>
-
-    <ol className="breadcrumb">
-      <li className="breadcrumb-item">
-        <a href="/">Home</a>
-      </li>
-      <li className="breadcrumb-item active">交通資訊</li>
-    </ol>
-
-    <div className="row">
+  <Container title="交通資訊" path={['交通與住宿', '交通資訊']}>
+    <Row>
       <div className="col-lg-12 mb-4">
         <div className="embed-responsive embed-responsive-21by9 mt-3">
           <iframe
@@ -38,12 +30,12 @@ const Traffic = () => (
             公車路線查詢：高雄市公共車船管理處（高雄市公車語音查詢電話749-7100）
           </li>
           <li>
-            <a href="https://ibus.tbkc.gov.tw/bus/">高雄市公車資訊</a>
+            <BlankA href="https://ibus.tbkc.gov.tw/bus/">高雄市公車資訊</BlankA>
           </li>
           <li>
-            <a href="https://safety-oga.nsysu.edu.tw/p/406-1296-204069,r11.php?Lang=zh-tw">
+            <BlankA href="https://safety-oga.nsysu.edu.tw/p/406-1296-204069,r11.php?Lang=zh-tw">
               校園公車資訊
-            </a>
+            </BlankA>
           </li>
         </ul>
         <hr />
@@ -217,8 +209,8 @@ const Traffic = () => (
           <li>乘坐計程車約20分鐘路程，車資約200~250元左右。</li>
         </ul>
       </div>
-    </div>
-  </div>
+    </Row>
+  </Container>
 );
 
 export default Traffic;

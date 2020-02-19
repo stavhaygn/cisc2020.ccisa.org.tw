@@ -1,16 +1,8 @@
 import React from 'react';
+import { Container } from './Utils';
 
 const ConferenceGoal = () => (
-  <div className="container">
-    <h1 className="mt-4 mb-3">會議資訊</h1>
-
-    <ol className="breadcrumb">
-      <li className="breadcrumb-item">
-        <a href="index.html">Home</a>
-      </li>
-      <li className="breadcrumb-item active">會議資訊</li>
-    </ol>
-
+  <Container title="關於大會">
     <hr />
 
     <p className="lead">— 會議緣起與目的 —</p>
@@ -36,7 +28,7 @@ const ConferenceGoal = () => (
     </p>
     <br />
     <hr />
-  </div>
+  </Container>
 );
 
 export default ConferenceGoal;

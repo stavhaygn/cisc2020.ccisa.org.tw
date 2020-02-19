@@ -5,6 +5,46 @@ import Header from './Header';
 import Content from './Content';
 import './style.css';
 
+const MenuItem = props => (
+  <li
+    className="nav-item dropdown"
+    data-toggle="collapse"
+    data-target=".navbar-collapse.show"
+  >
+    <a
+      className="nav-link dropdown-toggle"
+      href="/"
+      data-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="false"
+    >
+      {props.title}
+    </a>
+    <div
+      className="dropdown-menu dropdown-menu-right"
+      aria-labelledby="navbarDropdownPortfolio"
+    >
+      {props.links.map(([subtitle, link], key) => (
+        <Link className="dropdown-item" to={link} key={key}>
+          {subtitle}
+        </Link>
+      ))}
+    </div>
+  </li>
+);
+
+const NavItem = props => (
+  <li
+    className="nav-item"
+    data-toggle="collapse"
+    data-target=".navbar-collapse.show"
+  >
+    <Link className="nav-link" to={props.link}>
+      {props.title}
+    </Link>
+  </li>
+);
+
 const App = () => (
   <React.Fragment>
     <Router>
@@ -28,148 +68,35 @@ const App = () => (
             </button>
             <div className="collapse navbar-collapse" id="navbarResponsive">
               <ul className="navbar-nav ml-auto">
-                <li
-                  className="nav-item dropdown"
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse.show"
-                >
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="/"
-                    id="navbarDropdownPortfolio"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    會議資訊
-                  </a>
-                  <div
-                    className="dropdown-menu dropdown-menu-right"
-                    aria-labelledby="navbarDropdownPortfolio"
-                  >
-                    <Link className="dropdown-item" to="/ConferenceGoal">
-                      會議緣起與目的
-                    </Link>
-                    <Link className="dropdown-item" to="/ConferenceAgenda">
-                      會議議程
-                    </Link>
-                  </div>
-                </li>
-                <li
-                  className="nav-item"
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse.show"
-                >
-                  <Link className="nav-link" to="/CTF">
-                    CTF及海報徵選
-                  </Link>
-                </li>
+                <MenuItem
+                  title="關於大會"
+                  links={[
+                    ['關於大會', '/ConferenceGoal'],
+                    ['大會組織', '/Organization'],
+                  ]}
+                />
+                <NavItem title="會議資訊" link="/Information" />
+                <MenuItem
+                  title="會議議程"
+                  links={[
+                    ['每日議程', '/ConferenceAgenda'],
+                    ['參訪行程', '/Itinerary'],
+                    ['論文發表場次', '/Session'],
+                  ]}
+                />
+                <NavItem title="論文徵稿" link="/Paper" />
+                <NavItem title="活動報名" link="/SignUp" />
+                <NavItem title="CTF競賽" link="/CTF" />
+                <NavItem title="海報徵選" link="/Poster" />
+                <MenuItem
+                  title="交通與住宿"
+                  links={[
+                    ['交通資訊', '/Traffic'],
+                    ['住宿資訊', '/Accommodation'],
+                  ]}
+                />
 
-                <li
-                  className="nav-item"
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse.show"
-                >
-                  <Link className="nav-link" to="/Registration">
-                    線上報名及論文投稿
-                  </Link>
-                </li>
-                <li
-                  className="nav-item"
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse.show"
-                >
-                  <Link className="nav-link" to="/Organization">
-                    大會組織
-                  </Link>
-                </li>
-                <li
-                  className="nav-item dropdown"
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse.show"
-                >
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="/"
-                    id="navbarDropdownPortfolio"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    主辦及協辦單位
-                  </a>
-                  <div
-                    className="dropdown-menu dropdown-menu-right"
-                    aria-labelledby="navbarDropdownPortfolio"
-                  >
-                    <Link className="dropdown-item" to="/Organizer">
-                      主辦單位
-                    </Link>
-                    <Link className="dropdown-item" to="/CoOrganizer">
-                      協辦單位
-                    </Link>
-                  </div>
-                </li>
-                <li
-                  className="nav-item"
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse.show"
-                >
-                  <Link className="nav-link" to="/Activity">
-                    活動內容
-                  </Link>
-                </li>
-                <li
-                  className="nav-item dropdown"
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse.show"
-                >
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="/"
-                    id="navbarDropdownPortfolio"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    交通與住宿
-                  </a>
-                  <div
-                    className="dropdown-menu dropdown-menu-right"
-                    aria-labelledby="navbarDropdownPortfolio"
-                  >
-                    <Link className="dropdown-item" to="/Traffic">
-                      交通資訊
-                    </Link>
-                    <Link className="dropdown-item" to="/Accommodation">
-                      住宿資訊
-                    </Link>
-                    <Link className="dropdown-item" to="/CampusMap">
-                      校園地圖
-                    </Link>
-                    <Link className="dropdown-item" to="/Travel">
-                      高雄旅遊資訊
-                    </Link>
-                  </div>
-                </li>
-                <li
-                  className="nav-item"
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse.show"
-                >
-                  <Link className="nav-link" to="/Itinerary">
-                    參訪行程
-                  </Link>
-                </li>
-                <li
-                  className="nav-item"
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse.show"
-                >
-                  <Link className="nav-link" to="/Question">
-                    問題反應
-                  </Link>
-                </li>
+                <NavItem title="合作夥伴" link="/Partner" />
               </ul>
             </div>
           </div>

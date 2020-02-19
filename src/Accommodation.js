@@ -1,4 +1,6 @@
 import React from 'react';
+import { Container, Row } from './Utils';
+
 const BlankA = props => (
   <a href={props.href} target="_blank" rel="noopener noreferrer">
     {props.children}
@@ -6,17 +8,8 @@ const BlankA = props => (
 );
 
 const Accommodation = () => (
-  <div className="container">
-    <h1 className="mt-4 mb-3">住宿資訊</h1>
-
-    <ol className="breadcrumb">
-      <li className="breadcrumb-item">
-        <a href="/">Home</a>
-      </li>
-      <li className="breadcrumb-item active">住宿資訊</li>
-    </ol>
-
-    <div className="row">
+  <Container title="住宿資訊" path={['交通與住宿', '住宿資訊']}>
+    <Row>
       <div className="col-lg-12 mb-4">
         <iframe
           title="map"
@@ -29,8 +22,7 @@ const Accommodation = () => (
           src="https://www.google.com/maps/d/u/0/embed?mid=1YJ9B-Xxz2XebQyIpnKIkOltzF_tPgl7N"
         ></iframe>
       </div>
-    </div>
-    <div className="row">
+
       <div className="col-lg-12 mb-4">
         <BlankA href="https://www.loveriverhotel.com.tw/">
           <h3>帝豪飯店-愛河館</h3>
@@ -46,7 +38,7 @@ const Accommodation = () => (
             <li>電話：07-972-3788</li>
             <li>訂房方式：電話訂房</li>
             <div className="mt-4">
-              <table className="table">
+              <table className="table table-bordered">
                 <thead>
                   <tr>
                     <th scope="col">住宿專案</th>
@@ -86,8 +78,7 @@ const Accommodation = () => (
         </div>
         <hr />
       </div>
-    </div>
-    <div className="row">
+
       <div className="col-lg-12 mb-4">
         <BlankA href="https://www.fullon-hotels.com.tw/kh/">
           <h3>福容飯店</h3>
@@ -113,7 +104,7 @@ const Accommodation = () => (
             <li>訂房方式：活動20天前回傳訂房單</li>
             <li>合作優惠：此優惠僅限與會貴賓活動當週入住</li>
             <div className="mt-4">
-              <table className="table">
+              <table className="table table-bordered">
                 <thead>
                   <tr>
                     <th scope="col">住宿專案</th>
@@ -170,8 +161,7 @@ const Accommodation = () => (
         </div>
         <hr />
       </div>
-    </div>
-    <div className="row">
+
       <div className="col-lg-12 mb-4">
         <BlankA href="http://kaohsiung.fhotels.com.tw/">
           <h3>F商旅 愛河館</h3>
@@ -186,7 +176,7 @@ const Accommodation = () => (
             </li>
             <li>電話：(07)532-3333</li>
             <div className="mt-4">
-              <table className="table">
+              <table className="table table-bordered">
                 <thead>
                   <tr>
                     <th scope="col">住宿專案</th>
@@ -234,8 +224,7 @@ const Accommodation = () => (
         </div>
         <hr />
       </div>
-    </div>
-    <div className="row">
+
       <div className="col-lg-12 mb-4">
         <BlankA href="https://kaohsiung.chateaudechine.com/tw/index">
           <h3>翰品酒店</h3>
@@ -257,7 +246,7 @@ const Accommodation = () => (
             <li>訂房預定單：下載預定單</li>
             <li>訂房方式：回傳訂房單</li>
             <div className="mt-4">
-              <table className="table">
+              <table className="table table-bordered">
                 <thead>
                   <tr>
                     <th scope="col">住宿專案</th>
@@ -305,8 +294,7 @@ const Accommodation = () => (
           </ul>
         </div>
       </div>
-    </div>
-    <div className="row">
+
       <div className="col-lg-12 mb-4">
         <BlankA href="http://www.cf-hotel.com/kh/">
           <h3>香富大飯店</h3>
@@ -326,7 +314,7 @@ const Accommodation = () => (
               <a href="mailto:sf.hotel3@gmail.com">sf.hotel3@gmail.com</a>
             </li>
             <div className="mt-4">
-              <table className="table">
+              <table className="table table-bordered">
                 <thead>
                   <tr>
                     <th scope="col">住宿專案</th>
@@ -361,8 +349,8 @@ const Accommodation = () => (
           </ul>
         </div>
       </div>
-    </div>
-  </div>
+    </Row>
+  </Container>
 );
 
 export default Accommodation;

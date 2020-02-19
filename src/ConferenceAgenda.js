@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container } from './Utils';
 
 const DateColumn = ({ children }) => (
   <tr>
@@ -81,15 +82,7 @@ const MultipleLinesColumn = ({ time, content, place }) => (
 );
 
 const ConferenceAgenda = () => (
-  <div className="container">
-    <h1 className="mt-4 mb-3">會議議程</h1>
-
-    <ol className="breadcrumb">
-      <li className="breadcrumb-item">
-        <a href="index.html">Home</a>
-      </li>
-      <li className="breadcrumb-item active">會議議程</li>
-    </ol>
+  <Container title="每日議程" path={['會議議程', '每日議程']}>
     <h4>
       議程準備中，請稍後
       <span role="img" aria-label="Construction">
@@ -97,7 +90,7 @@ const ConferenceAgenda = () => (
       </span>
     </h4>
     <hr />
-  </div>
+  </Container>
 );
 
 export default ConferenceAgenda;
