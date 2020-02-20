@@ -39,7 +39,7 @@ const Organizer = () => (
 
       <div className="col-md-4">
         <img
-          src="ccisa.png"
+          src="/ccisa.png"
           className="img-fluid"
           alt="ResponsiveImage"
           width="100%"

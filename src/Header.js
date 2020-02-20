@@ -74,7 +74,7 @@ const Slide = () => (
       </div>
     </BrowserView>
     <MobileView>
-      <img src="mheader.jpg" className="img-fluid" alt="ResponsiveImage" />
+      <img src="/mheader.jpg" className="img-fluid" alt="ResponsiveImage" />
     </MobileView>
   </header>
 );

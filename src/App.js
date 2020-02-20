@@ -52,7 +52,7 @@ const App = () => (
         <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-primary fixed-top">
           <div className="container">
             <a className="navbar-brand" href="/">
-              <img src="nsysu_logo.png" width="54" alt="Image" />
+              <img src="/nsysu_logo.png" width="54" alt="Image" />
               第三十屆全國資訊安全會議
             </a>
             <button

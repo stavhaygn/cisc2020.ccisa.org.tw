@@ -16,7 +16,7 @@ const CampusMap = () => (
         <p>活動地點在圖資大樓11樓</p>
       </div>
       <div className="col-lg-12 mb-4">
-        <img src="map.png" className="img-fluid" alt="ResponsiveImage" />
+        <img src="/map.png" className="img-fluid" alt="ResponsiveImage" />
       </div>
     </div>
   </div>

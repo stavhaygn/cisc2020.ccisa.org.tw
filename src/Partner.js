@@ -19,12 +19,12 @@ const Partner = () => (
         <h3 className="my-3">指導單位</h3>
       </div>
       <div className="col-md-2 pr-0">
-        <Card href="https://www.edu.tw/" src="moe.png">
+        <Card href="https://www.edu.tw/" src="/moe.png">
           教育部
         </Card>
       </div>
       <div className="col-md-2 pl-0">
-        <Card href="https://www.most.gov.tw/" src="most.png">
+        <Card href="https://www.most.gov.tw/" src="/most.png">
           科技部
         </Card>
       </div>
@@ -33,12 +33,12 @@ const Partner = () => (
         <h3 className="my-3">主辦單位</h3>
       </div>
       <div className="col-md-2 pr-0">
-        <Card href="https://www.nsysu.edu.tw/" src="nsysu.png">
+        <Card href="https://www.nsysu.edu.tw/" src="/nsysu.png">
           國立中山大學
         </Card>
       </div>
       <div className="col-md-2 pl-0">
-        <Card href="https://ccisa.org.tw/" src="ccisa.png">
+        <Card href="https://ccisa.org.tw/" src="/ccisa.png">
           中華民國資訊安全學會
         </Card>
       </div>

@@ -14,7 +14,7 @@ const Travel = () => (
     <div className="row">
       <div className="col-lg-12">
         <a href="https://khh.travel/">
-          <img src="travel.png" className="img-fluid" alt="ResponsiveImage" />
+          <img src="/travel.png" className="img-fluid" alt="ResponsiveImage" />
         </a>
       </div>
     </div>
