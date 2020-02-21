@@ -1,68 +1,47 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Cryptology and Information Security Conference 2020 - Frontend
+第三十屆全國資訊安全會議 CISC2020 將於2020年5月19-22日，由資訊安全學會與中山大學共同主辦，地點於高雄市國立中山大學。本研討會所發表之論文，將採公開方式徵求稿件，並經一定之審稿制度審核，投稿詳細資訊請參考大會網站說明。歡迎各位先進踴躍投稿。
 
-## Available Scripts
+https://cisc2020.ccisa.org.tw/
 
-In the project directory, you can run:
+![](https://raw.githubusercontent.com/stavhaygn/CISC-Frontend/master/public/snapshot.png)
 
-### `npm start`
+## 重要時程
+活動期間：2020/5/19-22 共4天
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+活動地點：國立中山大學 圖資大樓11樓(高雄市鼓山區蓮海路70號)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+重要日期：
 
-### `npm test`
+* 論文投稿截止日：2020/4/6
+* 論文通知接受日：2020/5/4
+* 論文完稿截稿日：2020/5/10
+* 早鳥繳費期限：2020/5/10
+* 一般繳費期限：2020/5/20
+* 資安會議舉辦日期：2020/5/19-22
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 線上投稿
+本大會採用EasyChair作為投稿系統，請投稿者至EasyChair註冊並進行投稿。
 
-### `npm run build`
+[EasyChair投稿系統](https://easychair.org/conferences/?conf=cisc2020)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 徵稿主題
+全國資安會議所發表之論文，將採公開方式徵求稿件，並經一定之審稿制度審核。研討會論文內容包含（但不限於）下列主題，歡迎各位先進踴躍投稿。
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+1. 密碼學與認證協定	
+2. 5G / B5G安全
+3. 物聯網安全
+4. 網路與行動安全
+5. 數位鑑識與惡意程式分析
+6. 持續性滲透攻擊
+7. 系統安全
+8. 網路管理
+9. 資料隱藏
+10. 資料庫安全
+11. 入侵行為偵測
+12. 工控安全
+13. 網路與行動安全
+14. 關鍵資訊基礎設施安全
+15. 應用程式安全
+16. 身分認證及生物辨識
+17. 隱私保護
+18. AI安全
