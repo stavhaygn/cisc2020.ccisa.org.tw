@@ -81,7 +81,7 @@ const MultipleLinesColumn = ({ time, content, place }) => (
   </tr>
 );
 
-const ConferenceAgenda = () => (
+const Agenda = () => (
   <Container title="每日議程" path={['會議議程', '每日議程']}>
     <h4>
       議程準備中，請稍後
@@ -93,4 +93,4 @@ const ConferenceAgenda = () => (
   </Container>
 );
 
-export default ConferenceAgenda;
+export default Agenda;

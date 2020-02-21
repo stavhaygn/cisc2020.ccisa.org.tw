@@ -10,8 +10,8 @@ import Itinerary from './Itinerary';
 import Organization from './Organization';
 import Question from './Question';
 import Information from './Information';
-import ConferenceGoal from './ConferenceGoal';
-import ConferenceAgenda from './ConferenceAgenda';
+import About from './About';
+import Agenda from './Agenda';
 import Organizer from './Organizer';
 import Partner from './Partner';
 import Poster from './Poster';
@@ -25,8 +25,8 @@ const Content = () => (
     <Route exact path="/" component={Home} />
     <Route path="/News" component={News} />
     <Route path="/NewsDetail/:number" component={NewsDetail} />
-    <Route path="/ConferenceGoal" component={ConferenceGoal} />
-    <Route path="/ConferenceAgenda" component={ConferenceAgenda} />
+    <Route path="/About" component={About} />
+    <Route path="/Agenda" component={Agenda} />
     <Route path="/Itinerary" component={Itinerary} />
     <Route path="/Session" component={Session} />
     <Route path="/Paper" component={Paper} />

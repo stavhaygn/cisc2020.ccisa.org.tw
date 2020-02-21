@@ -71,7 +71,7 @@ const App = () => (
                 <MenuItem
                   title="關於大會"
                   links={[
-                    ['關於大會', '/ConferenceGoal'],
+                    ['關於大會', '/About'],
                     ['大會組織', '/Organization'],
                   ]}
                 />
@@ -79,7 +79,7 @@ const App = () => (
                 <MenuItem
                   title="會議議程"
                   links={[
-                    ['每日議程', '/ConferenceAgenda'],
+                    ['每日議程', '/Agenda'],
                     ['參訪行程', '/Itinerary'],
                     ['論文發表場次', '/Session'],
                   ]}

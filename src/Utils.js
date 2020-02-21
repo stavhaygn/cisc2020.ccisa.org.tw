@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 const BreadCrumb = props => (
   <ol className="breadcrumb">
@@ -14,8 +15,10 @@ const BreadCrumb = props => (
 );
 const Container = props => (
   <div className="container">
+    <Helmet>
+      <title>第三十屆全國資訊安全會議-{props.title}</title>
+    </Helmet>
     <h1 className="mt-4 mb-3">{props.title}</h1>
-
     <BreadCrumb path={props.path ? props.path : [props.title]} />
     {props.children}
   </div>

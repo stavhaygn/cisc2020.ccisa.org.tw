@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from './Utils';
 
-const ConferenceGoal = () => (
+const About = () => (
   <Container title="關於大會">
     <hr />
 
@@ -31,4 +31,4 @@ const ConferenceGoal = () => (
   </Container>
 );
 
-export default ConferenceGoal;
+export default About;

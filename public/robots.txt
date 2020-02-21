@@ -1,2 +1,3 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
+Sitemap: https://cisc2020.ccisa.org.tw/sitemap.xml
