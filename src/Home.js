@@ -76,14 +76,24 @@ const Home = () => (
       <BrowserView>
         <div className="row justify-content-center">
           <div className="col-md-8">
-            <img src="/cfp.jpg" className="img-fluid" alt="ResponsiveImage" />
+            <img
+              src="/cfp.jpg"
+              className="img-fluid"
+              loading="lazy"
+              alt="ResponsiveImage"
+            />
           </div>
         </div>
       </BrowserView>
       <MobileView>
         <div className="row justify-content-center">
           <div className="col-md-8">
-            <img src="/mcfp.jpg" className="img-fluid" alt="ResponsiveImage" />
+            <img
+              src="/mcfp.jpg"
+              className="img-fluid"
+              loading="lazy"
+              alt="ResponsiveImage"
+            />
           </div>
         </div>
       </MobileView>
