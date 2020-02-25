@@ -3,6 +3,7 @@ import { Container, Row } from './Utils';
 
 const Itinerary = () => (
   <Container title="參訪行程" path={['會議議程', '參訪行程']}>
+    <h4 className="text-danger">*報到當天當場報名</h4>
     <Row>
       <div className="col-md-8 my-4">
         <h3 className="mb-3">參訪活動A-柴山生態尋奇 </h3>
