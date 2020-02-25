@@ -13,6 +13,7 @@ const BreadCrumb = props => (
     ))}
   </ol>
 );
+
 const Container = props => (
   <div className="container">
     <Helmet>
@@ -26,10 +27,33 @@ const Container = props => (
 
 const Row = props => <div className="row">{props.children}</div>;
 
+const Column = props => (
+  <div className="col-md-12 mb-4">
+    <h4 className="mb-3">{props.title}</h4>
+    {props.children}
+  </div>
+);
+
 const BlankA = props => (
   <a href={props.href} target="_blank" rel="noopener noreferrer">
     {props.children}
   </a>
 );
 
-export { Container, Row, BlankA };
+const OrderList = props => {
+  let listStyleType = {};
+  if (props.cjk) listStyleType = { listStyleType: 'cjk-ideographic' };
+  else if (props.none) listStyleType = { listStyleType: 'none' };
+
+  return (
+    <ol style={listStyleType}>
+      {props.children.map((item, key) => (
+        <li className="mb-3" key={key}>
+          {item}
+        </li>
+      ))}
+    </ol>
+  );
+};
+
+export { Container, Row, Column, BlankA, OrderList };
