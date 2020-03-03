@@ -1,9 +1,10 @@
 import React from 'react';
-import { Container, Row, Column, OrderList } from './Utils';
+import { isBrowser } from 'react-device-detect';
+import { Container, Row, Column, OrderList, Emphasis } from './Utils';
 
 const CTF = () => (
   <Container title="CTF競賽">
-    <Row>
+    <Row style={isBrowser ? { fontSize: '18px' } : {}}>
       <Column title="活動目的">
         <p>
           為啟發本國學生對資訊安全學習的興趣，特舉辦「CTF」競賽活動，希望藉由CTF競賽活動鼓舞學生對資訊安全的學習熱誠，以期培育資安技術人員與提升資安教育水準。
@@ -15,19 +16,32 @@ const CTF = () => (
       <Column title="報名方式">
         <OrderList cjk>
           {[
-            '報名日期:自109年03月13日起至報名人數額滿為止。',
-            '本活動採網路報名，以個人為單位，有意參賽者請至報名網站完成報名資料填寫。',
+            <Emphasis key="key">
+              報名日期:自109年03月13日起至報名人數額滿為止。
+            </Emphasis>,
+            <React.Fragment key="key">
+              本活動採網路報名，
+              <Emphasis highlight>以個人為單位</Emphasis>
+              ，有意參賽者請至報名網站完成報名資料填寫。
+            </React.Fragment>,
             '網站填寫之報名表內容需完整及正確填寫，俾利聯絡活動相關事宜。',
-            '參賽者需於競賽當天出示加蓋108學年註冊章的學生證或在學證明聲明書(加蓋學校/科/系/所辦公室戳印)。',
+            <React.Fragment key="key">
+              參賽者需於競賽當天
+              <Emphasis highlight>
+                出示加蓋108學年註冊章的學生證或在學證明聲明書(加蓋學校/科/系/所辦公室戳印)。
+              </Emphasis>
+            </React.Fragment>,
           ]}
         </OrderList>
       </Column>
       <Column title="競賽說明">
         <OrderList cjk>
           {[
-            '競賽日期：109年05月21日9:00~12:00',
-            '報到時間：上午8:30~9:00',
-            '競賽地點：國立中山大學圖書資訊大樓11樓',
+            <Emphasis key="key">競賽日期：109年05月21日9:00~12:00</Emphasis>,
+            <Emphasis key="key">報到時間：上午8:30~9:00</Emphasis>,
+            <Emphasis key="key">
+              競賽地點：國立中山大學圖書資訊大樓11樓
+            </Emphasis>,
             <React.Fragment key="key">
               <p>競賽方式：</p>
               <OrderList>

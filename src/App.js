@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
-import { BrowserView, MobileView } from 'react-device-detect';
+import { BrowserView, MobileView, isBrowser } from 'react-device-detect';
 import Header from './Header';
 import Content from './Content';
 import './style.css';
@@ -52,7 +52,11 @@ const App = () => (
         <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-primary fixed-top">
           <div className="container">
             <a className="navbar-brand" href="/">
-              <img src="/nsysu_logo.png" width="54" alt="Image" />
+              {isBrowser ? (
+                <img src="/nsysu_logo.png" width="54" alt="Image" />
+              ) : (
+                  <React.Fragment />
+                )}
               第三十屆全國資訊安全會議
             </a>
             <button

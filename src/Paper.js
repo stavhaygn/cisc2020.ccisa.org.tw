@@ -1,11 +1,10 @@
 import React from 'react';
-import { Container, Row } from './Utils';
+import { Container, Row, Column } from './Utils';
 
 const Paper = () => (
   <Container title="論文徵稿">
     <Row>
-      <div className="col-lg-12 my-4">
-        <h3 className="mb-3">線上投稿</h3>
+      <Column title="線上投稿">
         <p>
           本大會採用EasyChair作為投稿系統，請投稿者至EasyChair註冊並進行投稿。
         </p>
@@ -15,10 +14,8 @@ const Paper = () => (
         >
           EasyChair投稿系統
         </a>
-      </div>
-
-      <div className="col-lg-12 my-4">
-        <h3 className="mb-3">投稿時程</h3>
+      </Column>
+      <Column title="投稿時程">
         <table className="table table-bordered col-md-3">
           <tbody>
             <tr>
@@ -35,10 +32,8 @@ const Paper = () => (
             </tr>
           </tbody>
         </table>
-      </div>
-
-      <div className="col-lg-12 my-4">
-        <h3 className="mb-3">徵稿主題</h3>
+      </Column>
+      <Column title="徵稿主題">
         <p>
           全國資安會議所發表之論文，將採公開方式徵求稿件，並經一定之審稿制度審核。研討會論文內容包含（但不限於）下列主題，歡迎各位先進踴躍投稿。
         </p>
@@ -82,10 +77,8 @@ const Paper = () => (
             </tr>
           </tbody>
         </table>
-      </div>
-
-      <div className="col-lg-12 my-4">
-        <h3 className="mb-3">論文格式</h3>
+      </Column>
+      <Column title="論文格式">
         <p>
           論文得以中文或英文撰寫，格式為：A4大小，四邊各留 25
           mm，單行間距，雙欄文章，無須列印頁碼，每篇論文以 12 頁為限，英文字體
@@ -97,42 +90,33 @@ const Paper = () => (
             論文格式範例下載
           </button>
         </a>
-      </div>
-
-      <div className="col-lg-12 my-4">
-        <h3 className="mb-3">審查機制</h3>
+      </Column>
+      <Column title="審查機制">
         <p>
           論文審查以匿名方式進行，審查結果將於論文接受通知日，通知各論文的聯絡人。被接受的論文必須將修正後的版本於註冊截止日以前寄回。論文的修正，參照審查意見修改，並製作成PDF格式檔案傳送至本會議的網站。
         </p>
-      </div>
-
-      <div className="col-lg-12 my-4">
-        <h3 className="mb-3">論文出版計畫</h3>
+      </Column>
+      <Column title="論文出版計畫">
         <p>
           為增加全國資訊安全會議之國際化，我們擬推薦優秀論文至 Future Internet
           (EI Journal)、Journal of Electronic Science and Technology
           (INSPEC)、Security and Communication Networks (SCIE)或同等級之期刊。
         </p>
-      </div>
-
-      <div className="col-lg-12 my-4">
-        <h3 className="mb-3">投稿教學</h3>
-        <p></p>
+      </Column>
+      <Column title="投稿教學">
         <a href="EasyChair-tutorial-Chinese-CISC2020.pdf" download>
           <button type="button" className="btn btn-success">
             開啟教學手冊PDF檔
           </button>
         </a>
-      </div>
-
-      <div className="col-lg-12 my-4">
-        <h3 className="mb-3">定稿教學</h3>
+      </Column>
+      <Column title="定稿教學">
         <a href="EasyChair-tutorial-Chinese-CISC2020.pdf" download>
           <button type="button" className="btn btn-success">
             開啟教學手冊PDF檔
           </button>
         </a>
-      </div>
+      </Column>
     </Row>
   </Container>
 );

@@ -25,7 +25,11 @@ const Container = props => (
   </div>
 );
 
-const Row = props => <div className="row">{props.children}</div>;
+const Row = props => (
+  <div className="row" style={props.style}>
+    {props.children}
+  </div>
+);
 
 const Column = props => (
   <div className="col-md-12 mb-4">
@@ -43,6 +47,7 @@ const BlankA = props => (
 const OrderList = props => {
   let listStyleType = {};
   if (props.cjk) listStyleType = { listStyleType: 'cjk-ideographic' };
+  else if (props.disc) listStyleType = { listStyleType: 'disc' };
   else if (props.none) listStyleType = { listStyleType: 'none' };
 
   return (
@@ -56,4 +61,11 @@ const OrderList = props => {
   );
 };
 
-export { Container, Row, Column, BlankA, OrderList };
+const Emphasis = props => {
+  const style = props.highlight
+    ? { backgroundColor: '#ccc', fontWeight: 'bold' }
+    : { fontWeight: 'bold' };
+  return <span style={style}>{props.children}</span>;
+};
+
+export { Container, Row, Column, BlankA, OrderList, Emphasis };

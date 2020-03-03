@@ -3,10 +3,10 @@ import { Container, Row } from './Utils';
 
 const Itinerary = () => (
   <Container title="參訪行程" path={['會議議程', '參訪行程']}>
-    <h4 className="text-danger">*報到當天當場報名</h4>
+    <h5 className="text-danger">*報到當天當場報名</h5>
     <Row>
-      <div className="col-md-8 my-4">
-        <h3 className="mb-3">參訪活動A-柴山生態尋奇 </h3>
+      <div className="col-md-8 mb-4">
+        <h4 className="mb-3">參訪活動A-柴山生態尋奇 </h4>
         <h5 className="mb-3">地點：柴山(近龍泉寺)</h5>
         <h5 className="mb-3">時間：約2.5小時</h5>
         <h5 className="mb-3">活動概述：</h5>
@@ -31,11 +31,11 @@ const Itinerary = () => (
     </Row>
     <hr />
     <Row>
-      <div className="col-md-4 my-4">
+      <div className="col-md-4 mb-4">
         <img src="/b.png" className="img-fluid" alt="ResponsiveImage" />
       </div>
       <div className="col-md-8 my-4">
-        <h3 className="mb-3">參訪活動B-西子灣海域體驗規劃 </h3>
+        <h4 className="mb-3">參訪活動B-西子灣海域體驗規劃 </h4>
         <h5 className="mb-3">地點：中山大學海域活動中心</h5>
         <h5 className="mb-3">時間：約3小時</h5>
         <h5 className="mb-3">活動概述：</h5>

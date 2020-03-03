@@ -1,23 +1,18 @@
 import React from 'react';
-import { Container, Row } from './Utils';
+import { Container, Row, Column } from './Utils';
 
 const SignUp = () => (
   <Container title="活動報名">
     <Row>
-      <div className="col-lg-12 mt-4">
-        <h3 className="mb-3" style={{ float: 'left' }}>
-          線上報名
-        </h3>
-        <div className="text-danger"> (建構中)</div>
-      </div>
-      <div className="col-lg-12 mb-4">
-        <a className="btn btn-primary" href="#">
-          線上報名
-        </a>
-      </div>
-
-      <div className="col-lg-12 my-4">
-        <h3 className="mb-3">報名時程</h3>
+      <Column title="線上報名">
+        <div className="mb-4">
+          <a className="btn btn-primary" href="#">
+            線上報名
+          </a>
+          <font className="text-danger"> (建構中)</font>
+        </div>
+      </Column>
+      <Column title="報名時程">
         <table className="table table-bordered col-md-3">
           <tbody>
             <tr>
@@ -30,16 +25,15 @@ const SignUp = () => (
             </tr>
           </tbody>
         </table>
-      </div>
-
-      <div className="col-lg-12 mt-4">
-        <h3 className="mb-3" style={{ float: 'left' }}>
-          報名費用
-        </h3>
-        <div className="text-danger"> (新台幣)</div>
-      </div>
-      <div className="col-lg-12 mb-4">
+      </Column>
+      <Column title="報名費用">
         <table className="table table-bordered col-md-3">
+          <thead>
+            <tr>
+              <th scope="col">票種</th>
+              <th scope="col">價格(新台幣)</th>
+            </tr>
+          </thead>
           <tbody>
             <tr>
               <td>學生早鳥票</td>
@@ -55,7 +49,7 @@ const SignUp = () => (
             </tr>
           </tbody>
         </table>
-      </div>
+      </Column>
     </Row>
   </Container>
 );

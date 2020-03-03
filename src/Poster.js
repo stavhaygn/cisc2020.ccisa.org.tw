@@ -1,9 +1,10 @@
 import React from 'react';
-import { Container, Row, Column, OrderList } from './Utils';
+import { isBrowser } from 'react-device-detect';
+import { Container, Row, Column, OrderList, Emphasis } from './Utils';
 
 const Poster = () => (
   <Container title="海報徵選">
-    <Row>
+    <Row style={isBrowser ? { fontSize: '18px' } : {}}>
       <Column title="活動目的">
         <p>
           為拉近資安與民眾距離，藉此提升全民對於資安的重視，藉由本次2020資安會議舉辦以資安為主題的海報徵選，鼓勵參加徵選者以繪圖方式呈現資訊安全的對於民眾生活的重要性並藉此提升民眾對於資安的意識。
@@ -15,11 +16,16 @@ const Poster = () => (
       <Column title="報名日期與報名方式">
         <OrderList cjk>
           {[
-            '報名日期:自109年03月13日起至報名人數額滿為止。',
+            <Emphasis key="key">
+              報名日期:自109年03月13日起至報名人數額滿為止。
+            </Emphasis>,
             <React.Fragment key="key">
               <p>報名方式</p>
               <p>
-                本活動採網路報名，有意參賽者請在109年05月10日前至報名網站完成報名資料填寫，並同時將作品上傳，每位參賽者限制10（含）件作品參賽。
+                本活動採網路報名，有意參賽者
+                <Emphasis highlight>
+                  請在109年05月10日前至報名網站完成報名資料填寫，並同時將作品上傳，每位參賽者限制10（含）件作品參賽。
+                </Emphasis>
               </p>
             </React.Fragment>,
             <React.Fragment key="key">
@@ -33,7 +39,12 @@ const Poster = () => (
               <OrderList>
                 {[
                   '網站填寫之報名表內容需完整及正確填寫，俾利聯絡活動相關事宜。',
-                  '經審核後符合參賽資格者，將會於109年05月15日寄發E-MAIL通知，始表示完成參賽手續。',
+                  <React.Fragment key="key">
+                    經審核後符合參賽資格者，
+                    <Emphasis highlight>
+                      將會於109年05月15日寄發E-MAIL通知，始表示完成參賽手續。
+                    </Emphasis>
+                  </React.Fragment>,
                 ]}
               </OrderList>
             </React.Fragment>,
@@ -43,8 +54,10 @@ const Poster = () => (
       <Column title="競賽說明">
         <OrderList cjk>
           {[
-            '競賽日期:109年05月20-21日',
-            '競賽地點:國立中山大學圖書資訊大樓11樓',
+            <Emphasis key="key">競賽日期:109年05月20-21日</Emphasis>,
+            <Emphasis key="key">
+              競賽地點:國立中山大學圖書資訊大樓11樓
+            </Emphasis>,
             <React.Fragment key="key">
               <p>競賽方式：</p>
               <OrderList>
