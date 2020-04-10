@@ -13,7 +13,7 @@ const Item = props => (
   >
     <div className="carousel-caption d-none d-md-block">
       <h2>Cryptology and Information Security Conference 2020</h2>
-      <h4>19-22 May, 2020</h4>
+      <h4>1-4 September, 2020</h4>
       <h4>National Sun Yat-sen University</h4>
     </div>
   </div>

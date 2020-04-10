@@ -22,11 +22,20 @@ const Poster = () => (
             <React.Fragment key="key">
               <p>報名方式</p>
               <p>
-                本活動採網路報名，有意參賽者
+                本活動採網路報名，
+                <Emphasis>無須繳交競賽報名費用</Emphasis>，有意參賽者
                 <Emphasis highlight>
-                  請在109年05月10日前至報名網站完成報名資料填寫，並同時將作品上傳，每位參賽者限制10（含）件作品參賽。
+                  請在109年05月10日前完成報名資料填寫，並同時將作品上傳，每位參賽者限制10（含）件作品參賽。
                 </Emphasis>
               </p>
+              <a
+                className="btn btn-primary"
+                href="https://docs.google.com/forms/d/1T8vNsNA60muxwQMM-UL0GL2fA5-idq-fQINyohSM3pw/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                點我報名
+              </a>
             </React.Fragment>,
             <React.Fragment key="key">
               <p>報名識別編號(E-Mail)</p>
@@ -54,7 +63,7 @@ const Poster = () => (
       <Column title="競賽說明">
         <OrderList cjk>
           {[
-            <Emphasis key="key">競賽日期:109年05月20-21日</Emphasis>,
+            <Emphasis key="key">競賽日期:109年09月02日09:00-17:00</Emphasis>,
             <Emphasis key="key">
               競賽地點:國立中山大學圖書資訊大樓11樓
             </Emphasis>,
@@ -93,7 +102,7 @@ const Poster = () => (
               <p>評審方式為競賽期間讓與會貴賓以投票方式表決。</p>
               <OrderList>
                 {[
-                  '一人一票，票數採累計加總，得獎參賽者依票數高低排序，同票數者以完成時間較短者為優先。',
+                  '一人一票，票數採累計加總，得獎參賽者依票數高低排序。',
                   '比賽成績若未臻理想則依據評審之決議，得以從缺辦理。',
                 ]}
               </OrderList>
@@ -114,12 +123,11 @@ const Poster = () => (
         <p>作品輸出規格（競賽）：</p>
         <OrderList none>
           {[
-            '海報尺寸：A1局全開（81.2cmx62.1cm，含出血）',
-            '創作理念尺寸：A5 （21.0cm x14.85cm），文字大小須大於	14（含）',
+            '海報尺寸：A2（594mm x 420mm，含出血）',
+            '創作理念尺寸：A6 （148mm x 105mm），文字大小須大於	14（含）',
             '解析度：300dpi（含）以上，CMYK四色印刷模式',
             <React.Fragment key="key">
-              <img src="/poster1.png" loading="lazy" alt="ResponsiveImage" />
-              <img src="/poster2.png" loading="lazy" alt="ResponsiveImage" />
+              <img src="/poster.png" loading="lazy" alt="ResponsiveImage" />
             </React.Fragment>,
           ]}
         </OrderList>
@@ -138,6 +146,16 @@ const Poster = () => (
             '頒獎典禮：於決賽結束後舉行',
           ]}
         </OrderList>
+        <p>
+          <b>
+            備註:請得獎人經主辦單位通知得獎後七個工作日內簽署並繳交「著作權授權同意書」，逾期者視同放棄得獎資格，由後面名次得獎人遞補。
+          </b>
+        </p>
+        <a href="CISC2020_poster_copyright_auth.doc" download>
+          <button type="button" className="btn btn-success">
+            下載著作權授權同意書
+          </button>
+        </a>
       </Column>
       <Column title="注意事項">
         <OrderList cjk>
@@ -182,7 +200,7 @@ const Poster = () => (
             </tr>
             <tr>
               <th scope="row">競賽</th>
-              <td>2020/5/20-21</td>
+              <td>2020/5/20 09:00-17:00</td>
             </tr>
           </tbody>
         </table>

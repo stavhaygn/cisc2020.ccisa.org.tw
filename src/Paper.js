@@ -20,15 +20,15 @@ const Paper = () => (
           <tbody>
             <tr>
               <td>論文投稿截止日</td>
-              <td>2020/4/6</td>
+              <td>2020/6/30</td>
             </tr>
             <tr>
               <td>論文通知接受日</td>
-              <td>2020/5/4</td>
+              <td>2020/8/4</td>
             </tr>
             <tr>
               <td>論文完稿截稿日</td>
-              <td>2020/5/10</td>
+              <td>2020/8/10</td>
             </tr>
           </tbody>
         </table>

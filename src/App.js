@@ -89,7 +89,7 @@ const App = () => (
                   ]}
                 />
                 <NavItem title="論文徵稿" link="/Paper" />
-                <NavItem title="活動報名" link="/SignUp" />
+                <NavItem title="會議報名" link="/SignUp" />
                 <NavItem title="CTF競賽" link="/CTF" />
                 <NavItem title="海報徵選" link="/Poster" />
                 <MenuItem

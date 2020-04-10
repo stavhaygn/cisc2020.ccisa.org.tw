@@ -8,7 +8,9 @@ const Item = props => (
       <b>{props.date}</b>
     </td>
     <td>
-      <a href={props.href}>{props.children}</a>
+      <a style={{ color: '#224162' }} href={props.href}>
+        {props.children}
+      </a>
     </td>
   </tr>
 );
@@ -28,6 +30,15 @@ const Home = () => (
                 </tr>
               </thead>
               <tbody>
+                <Item date="2020/4/10" href="#">
+                  為維護各位貴賓的健康與安全，經理監事決議將第三十屆全國資訊安全會議延期至2020/9/1-9/4辦理。
+                </Item>
+                <Item date="2020/3/13" href="/CTF">
+                  CTF及海報徵選已開放報名囉，名額有限，歡迎踴躍報名參加。
+                </Item>
+                <Item date="2020/3/13" href="#">
+                  溫馨提醒-為配合政府防疫相關政策，會議期間進入圖資大樓務必配合進場時為每位貴賓量額溫，並以酒精消毒雙手。
+                </Item>
                 <Item date="2020/1/16" href="/Paper">
                   論文投稿已開始，歡迎大家踴躍投稿。
                 </Item>
@@ -42,6 +53,7 @@ const Home = () => (
             <a
               href="/News"
               style={{
+                color: '#224162',
                 width: '100%',
                 fontSize: '20px',
                 textAlign: 'center',
@@ -56,18 +68,18 @@ const Home = () => (
         <h1 className="my-4">重要時程</h1>
         <div className="card" style={{ backgroundColor: '#F7F7F7' }}>
           <div className="card-body">
-            <p>活動期間：2020/5/19-22 共4天</p>
+            <p>活動期間：2020/9/1-4 共4天</p>
             <p>活動地點：國立中山大學 圖資大樓11樓(高雄市鼓山區蓮海路70號)</p>
             <p>重要日期：</p>
             <ul>
               <li>
-                <b>論文投稿截止日：2020/4/6</b>
+                <b>論文投稿截止日：2020/6/30</b>
               </li>
-              <li>論文通知接受日：2020/5/4</li>
-              <li>論文完稿截稿日：2020/5/10</li>
-              <li>早鳥繳費期限：2020/5/10</li>
-              <li>一般繳費期限：2020/5/20</li>
-              <li>資安會議舉辦日期：2020/5/19-22</li>
+              <li>論文通知接受日：2020/8/4</li>
+              <li>論文完稿截稿日：2020/8/10</li>
+              <li>早鳥繳費期限：2020/8/10</li>
+              <li>一般繳費期限：2020/9/2</li>
+              <li>資安會議舉辦日期：2020/9/1-4</li>
             </ul>
           </div>
         </div>
@@ -94,7 +106,6 @@ const Home = () => (
                   <img
                     className="d-block img-fluid"
                     src="/cfp.jpg"
-                    loading="lazy"
                     alt="First slide"
                   />
                 </div>

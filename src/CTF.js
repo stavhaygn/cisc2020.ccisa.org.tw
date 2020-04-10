@@ -7,7 +7,7 @@ const CTF = () => (
     <Row style={isBrowser ? { fontSize: '18px' } : {}}>
       <Column title="活動目的">
         <p>
-          為啟發本國學生對資訊安全學習的興趣，特舉辦「CTF」競賽活動，希望藉由CTF競賽活動鼓舞學生對資訊安全的學習熱誠，以期培育資安技術人員與提升資安教育水準。
+          為啟發本國學生對資訊安全學習的興趣，特舉辦「初階CTF」競賽活動，希望藉由CTF競賽活動鼓舞學生對資訊安全的學習熱誠，以期培育資安技術人員與提升資安教育水準。
         </p>
       </Column>
       <Column title="參加資格">
@@ -20,10 +20,21 @@ const CTF = () => (
               報名日期:自109年03月13日起至報名人數額滿為止。
             </Emphasis>,
             <React.Fragment key="key">
-              本活動採網路報名，
-              <Emphasis highlight>以個人為單位</Emphasis>
-              ，有意參賽者請至報名網站完成報名資料填寫。
+              <p>
+                本活動採網路報名，<Emphasis>無須繳交競賽報名費用</Emphasis>，
+                <Emphasis highlight>以個人為單位</Emphasis>
+                ，有意參賽者請完成報名資料填寫。
+              </p>
+              <a
+                className="btn btn-primary"
+                href="https://docs.google.com/forms/d/1XcT8H-SQc9sqV_obnmpRVwwMbhYlVOpIux9a_4Pa4w0/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                點我報名
+              </a>
             </React.Fragment>,
+
             '網站填寫之報名表內容需完整及正確填寫，俾利聯絡活動相關事宜。',
             <React.Fragment key="key">
               參賽者需於競賽當天
@@ -37,7 +48,7 @@ const CTF = () => (
       <Column title="競賽說明">
         <OrderList cjk>
           {[
-            <Emphasis key="key">競賽日期：109年05月21日9:00~12:00</Emphasis>,
+            <Emphasis key="key">競賽日期：109年09月03日9:00~12:00</Emphasis>,
             <Emphasis key="key">報到時間：上午8:30~9:00</Emphasis>,
             <Emphasis key="key">
               競賽地點：國立中山大學圖書資訊大樓11樓

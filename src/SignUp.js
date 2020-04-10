@@ -2,14 +2,14 @@ import React from 'react';
 import { Container, Row, Column } from './Utils';
 
 const SignUp = () => (
-  <Container title="活動報名">
+  <Container title="會議報名">
     <Row>
       <Column title="線上報名">
         <div className="mb-4">
           <a className="btn btn-primary" href="#">
             線上報名
           </a>
-          <font className="text-danger"> (建構中)</font>
+          <font className="text-danger"> (尚未開放)</font>
         </div>
       </Column>
       <Column title="報名時程">
@@ -17,11 +17,11 @@ const SignUp = () => (
           <tbody>
             <tr>
               <td>早鳥繳費期限</td>
-              <td>2020/05/05-2020/05/10</td>
+              <td>2020/8/5-2020/8/10</td>
             </tr>
             <tr>
               <td>一般繳費期限</td>
-              <td>2020/05/11-2020/05/20</td>
+              <td>2020/8/11-2020/9/2</td>
             </tr>
           </tbody>
         </table>
