@@ -10,7 +10,7 @@ const BlankA = props => (
 const Accommodation = () => (
   <Container title="住宿資訊" path={['交通與住宿', '住宿資訊']}>
     <Row>
-      <div className="col-lg-12 mb-4">
+      <div className="col-lg-12 mb-3">
         <iframe
           title="map"
           width="100%"
@@ -19,11 +19,11 @@ const Accommodation = () => (
           scrolling="no"
           marginHeight="0"
           marginWidth="0"
-          src="https://www.google.com/maps/d/u/0/embed?mid=1YJ9B-Xxz2XebQyIpnKIkOltzF_tPgl7N"
+          src="https://www.google.com/maps/d/embed?mid=1YJ9B-Xxz2XebQyIpnKIkOltzF_tPgl7N"
         ></iframe>
       </div>
 
-      <div className="col-lg-12 mb-4">
+      <div className="col-lg-12 mb-3">
         <BlankA href="https://www.loveriverhotel.com.tw/">
           <h3>帝豪飯店-愛河館</h3>
         </BlankA>
@@ -79,7 +79,7 @@ const Accommodation = () => (
         <hr />
       </div>
 
-      <div className="col-lg-12 mb-4">
+      <div className="col-lg-12 mb-3">
         <BlankA href="https://www.fullon-hotels.com.tw/kh/">
           <h3>福容飯店</h3>
         </BlankA>
@@ -162,7 +162,7 @@ const Accommodation = () => (
         <hr />
       </div>
 
-      <div className="col-lg-12 mb-4">
+      <div className="col-lg-12 mb-3">
         <BlankA href="http://kaohsiung.fhotels.com.tw/">
           <h3>F商旅 愛河館</h3>
         </BlankA>
@@ -225,7 +225,7 @@ const Accommodation = () => (
         <hr />
       </div>
 
-      <div className="col-lg-12 mb-4">
+      <div className="col-lg-12 mb-3">
         <BlankA href="https://kaohsiung.chateaudechine.com/tw/index">
           <h3>翰品酒店</h3>
         </BlankA>
@@ -293,9 +293,10 @@ const Accommodation = () => (
             <div>免費自助洗衣區（開放時間為早上07：00～晚上22：00）</div>
           </ul>
         </div>
+        <hr />
       </div>
 
-      <div className="col-lg-12 mb-4">
+      <div className="col-lg-12 mb-3">
         <BlankA href="http://www.cf-hotel.com/kh/">
           <h3>香富大飯店</h3>
         </BlankA>
@@ -345,6 +346,92 @@ const Accommodation = () => (
             <div>飯店停車場有限、停滿時請停市立立體停車場。</div>
             <div>
               全頻道42吋液晶電視.個人保險箱.烏龍茶包.無聲冰箱.乾濕分離浴室.吹風機。
+            </div>
+          </ul>
+        </div>
+        <hr />
+      </div>
+
+      <div className="col-lg-12 mb-3">
+        <BlankA href="https://www.ambassador-hotels.com/tc/kaohsiung">
+          <h3>高雄國賓大飯店</h3>
+        </BlankA>
+        <div className="mt-2">
+          <ul>
+            <li>
+              地址：
+              <BlankA href="https://goo.gl/maps/sUQsDBBrDxtpeymKA">
+                高雄市前金區民生二路202號
+              </BlankA>
+            </li>
+            <li>電話：(07)211-5211ext. 2215~2218</li>
+            <li>傳真：(07)201-0348</li>
+            <li>
+              Email：
+              <a href="mailto:resv.kh@ambassador-hotels.com">
+                resv.kh@ambassador-hotels.com
+              </a>
+            </li>
+            <li>
+              訂房預定單：
+              <a
+                href="/2020年第30屆全國資訊安全會議(中英文訂房單).doc"
+                download
+              >
+                下載預定單
+              </a>
+            </li>
+            <li>訂房方式：回傳訂房單</li>
+            <li>合作優惠：8/31-9/5當週入住</li>
+            <div className="mt-4">
+              <table className="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">住宿專案</th>
+                    <th scope="col">價格</th>
+                    <th scope="col">格局</th>
+                    <th scope="col">是否提供早點</th>
+                    <th scope="col">備註</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>精緻客房</td>
+                    <td>$2,300</td>
+                    <td>8坪，一中床</td>
+                    <td>早餐-1</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>豪華客房(一床)</td>
+                    <td>$2,900</td>
+                    <td>10坪，一大床</td>
+                    <td>早餐-1</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>豪華港景房(一床)</td>
+                    <td>$3,200</td>
+                    <td>10坪，一大床</td>
+                    <td>早餐-1</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>豪華客房(二床)</td>
+                    <td>$3,300</td>
+                    <td>10坪，兩中床</td>
+                    <td>早餐-2</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>豪華港景房(二床)</td>
+                    <td>$3,600</td>
+                    <td>10坪，兩中床</td>
+                    <td>早餐-2</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </ul>
         </div>
