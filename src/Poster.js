@@ -25,7 +25,7 @@ const Poster = () => (
                 本活動採網路報名，
                 <Emphasis>無須繳交競賽報名費用</Emphasis>，有意參賽者
                 <Emphasis highlight>
-                  請在109年05月10日前完成報名資料填寫，並同時將作品上傳，每位參賽者限制10（含）件作品參賽。
+                  請在109年08月10日前完成報名資料填寫，並同時將作品上傳，每位參賽者限制10（含）件作品參賽。
                 </Emphasis>
               </p>
               <a
@@ -51,7 +51,7 @@ const Poster = () => (
                   <React.Fragment key="key">
                     經審核後符合參賽資格者，
                     <Emphasis highlight>
-                      將會於109年05月15日寄發E-MAIL通知，始表示完成參賽手續。
+                      將會於109年08月15日寄發E-MAIL通知，始表示完成參賽手續。
                     </Emphasis>
                   </React.Fragment>,
                 ]}
@@ -192,15 +192,15 @@ const Poster = () => (
           <tbody>
             <tr>
               <th scope="row">報名</th>
-              <td>2020/3/13-2020/5/10前(名額有限，額滿止)</td>
+              <td>2020/3/13-2020/8/10前(名額有限，額滿止)</td>
             </tr>
             <tr>
               <th scope="row">E-mail通知符合參賽資格者</th>
-              <td>2020/5/15</td>
+              <td>2020/8/15</td>
             </tr>
             <tr>
               <th scope="row">競賽</th>
-              <td>2020/5/20 09:00-17:00</td>
+              <td>2020/9/2 09:00-17:00</td>
             </tr>
           </tbody>
         </table>

@@ -103,14 +103,7 @@ const Paper = () => (
           (INSPEC)、Security and Communication Networks (SCIE)或同等級之期刊。
         </p>
       </Column>
-      <Column title="投稿教學">
-        <a href="EasyChair-tutorial-Chinese-CISC2020.pdf" download>
-          <button type="button" className="btn btn-success">
-            開啟教學手冊PDF檔
-          </button>
-        </a>
-      </Column>
-      <Column title="定稿教學">
+      <Column title="定稿/投稿教學">
         <a href="EasyChair-tutorial-Chinese-CISC2020.pdf" download>
           <button type="button" className="btn btn-success">
             開啟教學手冊PDF檔

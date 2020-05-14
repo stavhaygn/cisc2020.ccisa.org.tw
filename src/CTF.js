@@ -25,14 +25,13 @@ const CTF = () => (
                 <Emphasis highlight>以個人為單位</Emphasis>
                 ，有意參賽者請完成報名資料填寫。
               </p>
-              <a
-                className="btn btn-primary"
-                href="https://docs.google.com/forms/d/1XcT8H-SQc9sqV_obnmpRVwwMbhYlVOpIux9a_4Pa4w0/viewform"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                點我報名
-              </a>
+
+              <p className="text-danger">
+                報名已額滿，現場開放候補(不保證補上)。
+              </p>
+              <p className="text-danger">
+                請於109年09月03日 上午08:30-08:50至報到處填寫候補名單。
+              </p>
             </React.Fragment>,
 
             '網站填寫之報名表內容需完整及正確填寫，俾利聯絡活動相關事宜。',

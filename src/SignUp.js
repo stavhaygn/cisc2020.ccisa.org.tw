@@ -5,12 +5,18 @@ const SignUp = () => (
   <Container title="會議報名">
     <Row>
       <Column title="線上報名">
-        <div className="mb-4">
-          <a className="btn btn-primary" href="#">
-            線上報名
-          </a>
-          <font className="text-danger"> (尚未開放)</font>
-        </div>
+        <a
+          className="btn btn-primary mb-3"
+          href="https://forms.gle/YSmk56Ks2fE6SuoA6"
+        >
+          線上報名
+        </a>
+        <br></br>
+        <a href="CISC2020論文授權書.doc" download>
+          <button type="button" className="btn btn-success">
+            下載著論文授權書
+          </button>
+        </a>
       </Column>
       <Column title="報名時程">
         <table className="table table-bordered col-md-3">
@@ -49,6 +55,12 @@ const SignUp = () => (
             </tr>
           </tbody>
         </table>
+      </Column>
+      <Column title="匯款資訊">
+        <p>銀行匯款或ATM轉帳</p>
+        <p>銀行：國泰世華銀行 東門分行(013)</p>
+        <p>戶名：中華民國資訊安全學會 </p>
+        <p>銀行帳號：032-50-831131-1</p>
       </Column>
     </Row>
   </Container>
