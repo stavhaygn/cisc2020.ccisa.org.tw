@@ -47,13 +47,16 @@ const Partner = () => (
           >
             國家通訊傳播委員會
           </Card>
+          <Card href="https://www.citi.sinica.edu.tw" src="/parners/citi.png">
+            中央研究院資訊科技創新研究中心
+          </Card>
           <Card
-            href="https://www.facebook.com/citc.itri.tw/"
+            href="https://www.facebook.com/citc.itri.tw"
             src="/parners/itri.png"
           >
             工研院巨量資訊科技中心
           </Card>
-          <Card href="https://nicst.ey.gov.tw/" src="/parners/dcs.png">
+          <Card href="https://nicst.ey.gov.tw" src="/parners/dcs.png">
             行政院資通安全處
           </Card>
           <Card href="https://www.ttc.org.tw/eng.php" src="/parners/ttc.png">
@@ -71,6 +74,9 @@ const Partner = () => (
           </Card>
           <Card href="https://www.issdu.com.tw/" src="/parners/issdu.png">
             數聯資安
+          </Card>
+          <Card href="https://www.acercsi.com/" src="/parners/abe.png">
+            安碁資訊
           </Card>
           <Card
             href="https://www.jcic.org.tw/main_ch/index.aspx"
@@ -106,6 +112,12 @@ const Partner = () => (
             聯宏科技
           </Card>
           <Card
+            href="https://www.trendmicro.com/zh_tw/business.html"
+            src="/parners/trendmicro.png"
+          >
+            趨勢科技
+          </Card>
+          <Card
             href="https://www.fisc.com.tw/TC/Default.aspx"
             src="/parners/fisc.png"
           >
@@ -116,6 +128,12 @@ const Partner = () => (
           </Card>
           <Card href="https://www.twnic.net.tw/" src="/parners/twnic.png">
             財團法人台灣網路資訊中心
+          </Card>
+          <Card
+            href="https://www.twcert.org.tw/tw/mp-1.html"
+            src="/parners/twcert.png"
+          >
+            台灣電腦網路危機處理暨協調中心
           </Card>
         </Row>
       </Column>
