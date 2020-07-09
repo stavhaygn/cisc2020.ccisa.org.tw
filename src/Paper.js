@@ -20,7 +20,9 @@ const Paper = () => (
           <tbody>
             <tr>
               <td>論文投稿截止日</td>
-              <td>2020/6/30</td>
+              <td>
+                <strike>2020/6/30</strike> <font color="red">2020/7/7</font>
+              </td>
             </tr>
             <tr>
               <td>論文通知接受日</td>
@@ -79,15 +81,43 @@ const Paper = () => (
         </table>
       </Column>
       <Column title="論文格式">
-        <p>
-          論文得以中文或英文撰寫，格式為：A4大小，四邊各留 25
-          mm，單行間距，雙欄文章，無須列印頁碼，每篇論文以 12 頁為限，英文字體
-          Times New Roman 10點，中文字體標楷體 10
-          點。請將論文全文存檔為PDF檔案於投稿截止日期前上傳至本會議網站，詳細傳送方式請參考下方投稿教學。
-        </p>
-        <a href="CISC2020_format-0121rev.doc" download>
+        論文得以中文或英文撰寫，格式為：A4大小，四邊各留 25
+        mm，單行間距，雙欄文章，無須列印頁碼，每篇論文以 12 頁為限，英文字體
+        Times New Roman 10點，中文字體標楷體 10
+        點。請將論文全文存檔為PDF檔案於投稿截止日期前上傳至本會議網站，詳細傳送方式請參考下方投稿教學。
+        <ul>
+          <li>
+            <p className="my-1">
+              XeLaTeX範例的詳細使用方式請參考
+              <a href="https://github.com/lindawan/cisc-latex/blob/master/README.md">
+                README
+              </a>
+              。(提供來源：鄭欣明教授及萬子綾同學)
+            </p>
+          </li>
+          <li>
+            <p className="my-1">
+              pdfTex範例亦可使用Overleaf線上編輯器，請參考
+              <a href="https://www.overleaf.com/project/5ef9cc9c552c8f00015388b3">
+                線上範例
+              </a>
+              。(提供來源：陳昱圻教授)
+            </p>
+          </li>
+        </ul>
+        <a className="mr-3" href="CISC2020_format-0121rev.doc" download>
           <button type="button" className="btn btn-success">
-            論文格式範例下載
+            論文格式範例下載 Word
+          </button>
+        </a>
+        <a className="mr-3" href="CISC2020_format_XeLaTex.tex" download>
+          <button type="button" className="btn btn-success">
+            論文格式範例下載 XeLaTeX
+          </button>
+        </a>
+        <a href="CISC2020_format_pdfTex.tex" download>
+          <button type="button" className="btn btn-success">
+            論文格式範例下載 pdfTeX
           </button>
         </a>
       </Column>

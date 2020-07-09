@@ -170,6 +170,10 @@ const Organization = () => (
             <td>中央警察大學</td>
           </tr>
           <tr>
+            <td>王銘宏 教授</td>
+            <td>逢甲大學</td>
+          </tr>
+          <tr>
             <td>左瑞麟 教授</td>
             <td>國立政治大學</td>
           </tr>
@@ -190,16 +194,16 @@ const Organization = () => (
             <td>亞洲大學</td>
           </tr>
           <tr>
-            <td>林根煌 教授</td>
-            <td>國立中山大學</td>
-          </tr>
-          <tr>
             <td>林祝興 教授</td>
             <td>東海大學</td>
           </tr>
           <tr>
             <td>林詠章 教授</td>
             <td>國立中興大學</td>
+          </tr>
+          <tr>
+            <td>紀博文 教授</td>
+            <td>國立臺灣師範大學</td>
           </tr>
           <tr>
             <td>孫宏民 教授</td>
@@ -244,6 +248,10 @@ const Organization = () => (
           <tr>
             <td>黃俊穎 教授</td>
             <td>國立交通大學</td>
+          </tr>
+          <tr>
+            <td>黃政嘉 教授</td>
+            <td>國立臺灣科技大學</td>
           </tr>
           <tr>
             <td>楊明豪 教授</td>
