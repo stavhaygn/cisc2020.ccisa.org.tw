@@ -123,6 +123,15 @@ const Partner = () => (
           >
             財金資訊
           </Card>
+          <Card href="https://ecolux.tech/" src="/parners/ecolux.png">
+            尚承科技
+          </Card>
+          <Card
+            href="http://www.provision.com.tw/"
+            src="/parners/provision.png"
+          >
+            普鴻資訊
+          </Card>
           <Card href="http://www.hwacom.com/" src="/parners/hwacom.png">
             華電聯網
           </Card>
