@@ -62,6 +62,9 @@ const Partner = () => (
           <Card href="https://www.ttc.org.tw/eng.php" src="/parners/ttc.png">
             財團法人電信技術中心
           </Card>
+          <Card href="https://www.iii.org.tw/" src="/parners/iii.png">
+            財團法人資訊工業策進會
+          </Card>
         </Row>
       </Column>
       <Column title="贊助廠商">
@@ -104,6 +107,9 @@ const Partner = () => (
           </Card>
           <Card href="https://www.nchc.org.tw/" src="/parners/nchc.png">
             財團法人國家實驗研究院國家高速網路與計算中心
+          </Card>
+          <Card href="https://www.twca.com.tw/" src="/parners/twca.png">
+            台灣網路認證
           </Card>
           <Card
             href="http://www.paysecure.com.tw/"

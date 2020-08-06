@@ -1,25 +1,17 @@
 import React from 'react';
+import { isBrowser } from 'react-device-detect';
+import { Container, Row, Column } from './Utils';
 
 const CampusMap = () => (
-  <div className="container">
-    <h1 className="mt-4 mb-3">校園地圖</h1>
-
-    <ol className="breadcrumb">
-      <li className="breadcrumb-item">
-        <a href="/">Home</a>
-      </li>
-      <li className="breadcrumb-item active">校園地圖</li>
-    </ol>
-
-    <div className="row">
-      <div className="col-lg-12">
-        <p>活動地點在圖資大樓11樓</p>
-      </div>
-      <div className="col-lg-12 mb-4">
+  <Container title="校園平面圖">
+    <Row style={isBrowser ? { fontSize: '18px' } : {}}>
+      <Column title="活動地點">
+        <div className="mb-1">主會場在圖資大樓11樓</div>
+        <div className="mb-1">晚宴會場在西子灣沙灘會館</div>
         <img src="/map.png" className="img-fluid" alt="ResponsiveImage" />
-      </div>
-    </div>
-  </div>
+      </Column>
+    </Row>
+  </Container>
 );
 
 export default CampusMap;
