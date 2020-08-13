@@ -12,7 +12,7 @@ const SignUp = () => (
           線上報名
         </a>
         <br></br>
-        <a href="CISC2020論文授權書.doc" download>
+        <a href="/CISC2020_paper_authorization.doc" download>
           <button type="button" className="btn btn-success">
             下載著論文授權書
           </button>
@@ -55,6 +55,11 @@ const SignUp = () => (
             </tr>
           </tbody>
         </table>
+        <p>
+          ※ 報名費內含晚宴乙人，若需攜伴，每人NT.800 元。 <br />※
+          註冊費收據統一於大會報到時領取。 <br />※
+          8/13(四)前每篇論文至少要有一人以「論文發表者」身分完成報名及繳費，逾期無法將論文收錄於論文集中。
+        </p>
       </Column>
       <Column title="匯款資訊">
         <p>銀行匯款或ATM轉帳</p>

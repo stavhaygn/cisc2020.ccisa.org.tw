@@ -105,17 +105,17 @@ const Paper = () => (
             </p>
           </li>
         </ul>
-        <a className="mr-3" href="CISC2020_format-0121rev.doc" download>
+        <a className="mr-3" href="/CISC2020_format-0121rev.doc" download>
           <button type="button" className="btn btn-success">
             論文格式範例下載 Word
           </button>
         </a>
-        <a className="mr-3" href="CISC2020_format_XeLaTex.tex" download>
+        <a className="mr-3" href="/CISC2020_format_XeLaTex.tex" download>
           <button type="button" className="btn btn-success">
             論文格式範例下載 XeLaTeX
           </button>
         </a>
-        <a href="CISC2020_format_pdfTex.tex" download>
+        <a href="/CISC2020_format_pdfTex.tex" download>
           <button type="button" className="btn btn-success">
             論文格式範例下載 pdfTeX
           </button>
@@ -139,6 +139,15 @@ const Paper = () => (
             開啟教學手冊PDF檔
           </button>
         </a>
+      </Column>
+      <Column title="論文定稿上傳教學影片">
+        <div className="embed-responsive embed-responsive-16by9">
+          <iframe
+            className="embed-responsive-item"
+            src="https://www.youtube.com/embed/zYS2cYTADig"
+            allowFullScreen
+          ></iframe>
+        </div>
       </Column>
     </Row>
   </Container>

@@ -374,10 +374,7 @@ const Accommodation = () => (
             </li>
             <li>
               訂房預定單：
-              <a
-                href="/2020年第30屆全國資訊安全會議(中英文訂房單).doc"
-                download
-              >
+              <a href="/CISC2020_booking(English and Chinese).doc" download>
                 下載預定單
               </a>
             </li>

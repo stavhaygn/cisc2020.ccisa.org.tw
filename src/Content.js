@@ -8,7 +8,7 @@ import SignUp from './SignUp';
 import CTF from './CTF';
 import Itinerary from './Itinerary';
 import Organization from './Organization';
-import Question from './Question';
+// import Question from './Question';
 import Information from './Information';
 import About from './About';
 import Agenda from './Agenda';
@@ -16,6 +16,7 @@ import Organizer from './Organizer';
 import Partner from './Partner';
 import Poster from './Poster';
 import Traffic from './Traffic';
+import CampusMap from './CampusMap';
 import Accommodation from './Accommodation';
 import Travel from './Travel';
 import Session from './Session';
@@ -35,12 +36,13 @@ const Content = () => (
     <Route path="/Poster" component={Poster} />
     <Route path="/Information" component={Information} />
     <Route path="/Traffic" component={Traffic} />
+    <Route path="/CampusMap" component={CampusMap} />
     <Route path="/Accommodation" component={Accommodation} />
     <Route path="/Partner" component={Partner} />
     <Route path="/Organization" component={Organization} />
     <Route path="/Organizer" component={Organizer} />
     <Route path="/Travel" component={Travel} />
-    <Route path="/Question" component={Question} />
+    {/* <Route path="/Question" component={Question} /> */}
     <Route component={Home} />
   </Switch>
 );

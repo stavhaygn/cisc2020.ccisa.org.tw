@@ -97,6 +97,8 @@ const App = () => (
                   links={[
                     ['交通資訊', '/Traffic'],
                     ['住宿資訊', '/Accommodation'],
+                    ['校園平面圖', '/CampusMap'],
+                    ['旅遊資訊', '/Travel'],
                   ]}
                 />
 
