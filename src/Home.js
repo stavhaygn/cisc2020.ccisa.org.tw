@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserView, MobileView } from 'react-device-detect';
-import { Row } from './Utils';
+import { Row, BlankA } from './Utils';
 
 const Item = props => (
   <tr>
@@ -30,6 +30,9 @@ const Home = () => (
                 </tr>
               </thead>
               <tbody>
+                <Item date="2020/8/13" href="/Agenda">
+                  議程及論文發表順序已公告，請參考會議議程。
+                </Item>
                 <Item date="2020/4/10" href="#">
                   為維護各位貴賓的健康與安全，經理監事決議將第三十屆全國資訊安全會議延期至2020/9/1-9/4辦理。
                 </Item>
@@ -91,74 +94,28 @@ const Home = () => (
       <BrowserView>
         <div className="row justify-content-center">
           <div className="col-md-8">
-            <div
-              id="posterIndicators"
-              className="carousel slide"
-              data-ride="carousel"
-            >
-              <ol className="carousel-indicators">
-                <li
-                  data-target="#posterIndicators"
-                  data-slide-to="0"
-                  className="active"
-                ></li>
-                <li data-target="#posterIndicators" data-slide-to="1"></li>
-              </ol>
-              <div className="carousel-inner">
-                <div className="carousel-item h-100 active">
-                  <img
-                    className="d-block img-fluid"
-                    src="/cfp.jpg"
-                    alt="First slide"
-                  />
-                </div>
-                <div className="carousel-item h-100">
-                  <img
-                    className="d-block img-fluid"
-                    src="/cisc.jpg"
-                    loading="lazy"
-                    alt="Second slide"
-                  />
-                </div>
-              </div>
-
-              <a
-                className="carousel-control-prev"
-                href="#posterIndicators"
-                role="button"
-                data-slide="prev"
-              >
-                <span
-                  className="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span className="sr-only">Previous</span>
-              </a>
-              <a
-                className="carousel-control-next"
-                href="#posterIndicators"
-                role="button"
-                data-slide="next"
-              >
-                <span
-                  className="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span className="sr-only">Next</span>
-              </a>
-            </div>
+            <BlankA href="https://forms.gle/7MoU6zBwcVJJ9Ld9A">
+              <img
+                src="/CISC2020_practice_web.jpg"
+                className="img-fluid"
+                loading="lazy"
+                alt="ResponsiveImage"
+              />
+            </BlankA>
           </div>
         </div>
       </BrowserView>
       <MobileView>
         <div className="row justify-content-center">
           <div className="col-md-8">
-            <img
-              src="/mcfp.jpg"
-              className="img-fluid"
-              loading="lazy"
-              alt="ResponsiveImage"
-            />
+            <BlankA href="https://forms.gle/7MoU6zBwcVJJ9Ld9A">
+              <img
+                src="/CISC2020_practice_web_m.jpg"
+                className="img-fluid"
+                loading="lazy"
+                alt="ResponsiveImage"
+              />
+            </BlankA>
           </div>
         </div>
       </MobileView>

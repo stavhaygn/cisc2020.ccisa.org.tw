@@ -150,6 +150,12 @@ const Partner = () => (
           >
             台灣電腦網路危機處理暨協調中心
           </Card>
+          <Card
+            href="https://innoserve.tca.org.tw/advertise_EDUSE.htm"
+            src="/parners/tca.png"
+          >
+            大專校院資訊應用服務創新競賽
+          </Card>
         </Row>
       </Column>
     </div>
