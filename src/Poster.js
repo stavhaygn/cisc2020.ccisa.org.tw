@@ -127,7 +127,12 @@ const Poster = () => (
             '創作理念尺寸：A6 （148mm x 105mm），文字大小須大於	14（含）',
             '解析度：300dpi（含）以上，CMYK四色印刷模式',
             <React.Fragment key="key">
-              <img src="/poster.png" loading="lazy" alt="ResponsiveImage" />
+              <img
+                src="/poster.png"
+                className="img-fluid"
+                loading="lazy"
+                alt="ResponsiveImage"
+              />
             </React.Fragment>,
           ]}
         </OrderList>

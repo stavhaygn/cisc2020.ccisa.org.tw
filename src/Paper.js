@@ -105,18 +105,18 @@ const Paper = () => (
             </p>
           </li>
         </ul>
-        <a className="mr-3" href="/CISC2020_format-0121rev.doc" download>
-          <button type="button" className="btn btn-success">
+        <a href="/CISC2020_format-0121rev.doc" download>
+          <button type="button" className="btn btn-success mr-3 mb-3">
             論文格式範例下載 Word
           </button>
         </a>
-        <a className="mr-3" href="/CISC2020_format_XeLaTex.tex" download>
-          <button type="button" className="btn btn-success">
+        <a href="/CISC2020_format_XeLaTex.tex" download>
+          <button type="button" className="btn btn-success mr-3 mb-3">
             論文格式範例下載 XeLaTeX
           </button>
         </a>
         <a href="/CISC2020_format_pdfTex.tex" download>
-          <button type="button" className="btn btn-success">
+          <button type="button" className="btn btn-success mr-3 mb-3">
             論文格式範例下載 pdfTeX
           </button>
         </a>

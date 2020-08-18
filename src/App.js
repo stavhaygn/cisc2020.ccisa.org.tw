@@ -53,7 +53,7 @@ const App = () => (
           <div className="container">
             <a className="navbar-brand" href="/">
               {isBrowser ? (
-                <img src="/nsysu_logo.png" width="54" alt="Image" />
+                <img src="/nsysu_logo.png" width="54" />
               ) : (
                   <React.Fragment />
                 )}
