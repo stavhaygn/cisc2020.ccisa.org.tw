@@ -65,6 +65,12 @@ const Partner = () => (
           <Card href="https://www.iii.org.tw/" src="/parners/iii.png">
             財團法人資訊工業策進會
           </Card>
+          <Card
+            href="https://twisc.nsysu.edu.tw/"
+            src="/parners/nsysu_isrc.png"
+          >
+            國立中山大學 資訊安全研究中心
+          </Card>
         </Row>
       </Column>
       <Column title="贊助廠商">

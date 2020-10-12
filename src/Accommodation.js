@@ -124,7 +124,7 @@ const Accommodation = () => (
                   </tr>
                   <tr>
                     <td>豪華雙床房</td>
-                    <td>$2,000</td>
+                    <td>$2,800</td>
                     <td>10坪，市景兩中床</td>
                     <td>自助式早餐</td>
                     <td></td>

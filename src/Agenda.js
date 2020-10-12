@@ -57,6 +57,14 @@ const MultipleLines = ({ children }) => (
 const Agenda = () => (
   <Container title="會議議程">
     <Row style={isBrowser ? { fontSize: '18px' } : {}}>
+      <Column title="論文發表規則">
+        <p>
+          每人發表時間<font color="red">10</font>分鐘 、
+          <font color="red">7</font>
+          分鐘舉牌提醒、<font color="red">8</font>分鐘按鈴提醒、
+          <font color="red">2</font>分鐘由主持人提問。
+        </p>
+      </Column>
       <Column title="會議議程表">
         <Table>
           <DateColumn>2020年9月1日（星期二）</DateColumn>
@@ -303,7 +311,7 @@ const Agenda = () => (
                   </TableRow>
                   <TableRow>
                     <td>
-                      <OneLine>系統安全獎</OneLine>
+                      <OneLine>系統安全</OneLine>
                     </td>
                     <td>
                       <OneLine>密碼學與認證協定II</OneLine>
@@ -384,7 +392,7 @@ const Agenda = () => (
                   '國際會議廳',
                   <br key />,
                   <strong key>CTF競賽</strong>,
-                  '中信廳',
+                  '博士廳',
                 ]}
               </MultipleLines>
             </td>
@@ -598,11 +606,6 @@ const Agenda = () => (
           </TableRow>
         </Table>
         <br />
-        <a href="/CISC2020_agenda_20200818.pdf" download>
-          <button type="button" className="btn btn-success mr-3 mb-3">
-            會議議程表PDF下載
-          </button>
-        </a>
       </Column>
       <Column title="產學技術研討議程">
         <Table>
