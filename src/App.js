@@ -53,10 +53,10 @@ const App = () => (
           <div className="container">
             <a className="navbar-brand" href="/">
               {isBrowser ? (
-                <img src="/nsysu_logo.png" width="54" />
+                <img src="/nsysu_logo.png" width="54" alt="logo" />
               ) : (
-                  <React.Fragment />
-                )}
+                <React.Fragment />
+              )}
               第三十屆全國資訊安全會議
             </a>
             <button

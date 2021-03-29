@@ -143,6 +143,7 @@ const Paper = () => (
       <Column title="論文定稿上傳教學影片">
         <div className="embed-responsive embed-responsive-16by9">
           <iframe
+            title="Easychair tutorial"
             className="embed-responsive-item"
             src="https://www.youtube.com/embed/zYS2cYTADig"
             allowFullScreen
