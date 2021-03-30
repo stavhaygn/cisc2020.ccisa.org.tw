@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import { BrowserView, MobileView, isBrowser } from 'react-device-detect';
-import Header from './Header';
-import Content from './Content';
 import './style.css';
+
+const Header = lazy(() => import('./Header'));
+const Content = lazy(() => import('./Content'));
 
 const MenuItem = props => (
   <li
@@ -108,8 +109,11 @@ const App = () => (
           </div>
         </nav>
 
-        <Header />
-        <Content />
+        <Suspense fallback={<div />}>
+          <Header />
+          <Content />
+        </Suspense>
+
         <BrowserView>
           <div style={{ height: '8vh' }}></div>
         </BrowserView>
