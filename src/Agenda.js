@@ -74,7 +74,7 @@ const Agenda = () => (
           <TableColumn time="14:00-17:00" place="博士廳">
             <MultipleLines>
               {[
-                <strong key>資安專題演練</strong>,
+                <strong key="a77">資安專題演練</strong>,
                 '主講人：MacacaHub (國立中山大學 資訊工程學系)',
                 '題目：基礎網頁安全演練',
               ]}
@@ -93,7 +93,7 @@ const Agenda = () => (
           <TableColumn time="09:30-09:50" place="國際會議廳">
             <MultipleLines>
               {[
-                <strong key>開幕致詞</strong>,
+                <strong key="a96">開幕致詞</strong>,
                 '鄭英耀 校長 （國立中山大學）',
                 '范俊逸 理事長（資訊安全學會）',
               ]}
@@ -102,7 +102,7 @@ const Agenda = () => (
           <TableColumn time="09:50-10:30" place="國際會議廳">
             <MultipleLines>
               {[
-                <strong key>Keynote 演講（一）</strong>,
+                <strong key="a105">Keynote 演講（一）</strong>,
                 '主講人：楊伯因 研究員(中央研究院)',
                 '演講題目：後量子密碼學與美國國家標準局 (NIST) 的競賽',
                 '主持人：范俊逸 理事長',
@@ -140,13 +140,13 @@ const Agenda = () => (
           </TableColumn>
           <TableColumn time="13:10-14:10" place="國際會議廳">
             <OneLine>
-              <strong>賴溪松教授論文獎暨論文成果發表會</strong>
+              <strong key="a143">賴溪松教授論文獎暨論文成果發表會</strong>
             </OneLine>
           </TableColumn>
           <TableColumn time="14:10-14:40" place="國際會議廳">
             <MultipleLines>
               {[
-                <strong key>資安專題演講（一）</strong>,
+                <strong key="a149">資安專題演講（一）</strong>,
                 '主講人：鄭欣明 教授',
                 '演講題目：惡意基地台攻擊： 4G/5G的資安危機與轉機',
                 '主持人:王智弘 教授',
@@ -375,7 +375,7 @@ const Agenda = () => (
             <td width="40%">
               <MultipleLines>
                 {[
-                  <strong key>Keynote 演講（二）</strong>,
+                  <strong key="a378">Keynote 演講（二）</strong>,
                   '主講人：陳振楠 會長(行動應用資安聯盟)',
                   '演講題目：ISO/IEC 62443之初探!',
                   '主持人：范俊逸 理事長',
@@ -388,10 +388,10 @@ const Agenda = () => (
             <td rowSpan="5" width="25%">
               <MultipleLines>
                 {[
-                  <strong key>演講</strong>,
+                  <strong key="a391">演講</strong>,
                   '國際會議廳',
-                  <br key />,
-                  <strong key>CTF競賽</strong>,
+                  <br key="a393" />,
+                  <strong key="a394">CTF競賽</strong>,
                   '博士廳',
                 ]}
               </MultipleLines>
@@ -412,7 +412,7 @@ const Agenda = () => (
             <td>
               <MultipleLines>
                 {[
-                  <strong key>資安專題演講（二）</strong>,
+                  <strong key="a415">資安專題演講（二）</strong>,
                   '主講人：紀博文 教授',
                   '演講題目：Do not ask me what I am looking for',
                   '主持人:王銘宏 教授',
@@ -451,7 +451,7 @@ const Agenda = () => (
           <TableColumn time="13:10-13:40" place="中信廳">
             <MultipleLines>
               {[
-                <strong key>資安專題演講（三）</strong>,
+                <strong key="a454">資安專題演講（三）</strong>,
                 '主講人：克拉迪 教授',
                 '演講題目：Securing the Edge Computing: Current Cryptographic Practices and Challenges',
                 '主持人: 徐瑞壕 教授',
