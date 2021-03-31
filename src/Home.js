@@ -113,16 +113,14 @@ const Home = () => (
         </div>
       </BrowserView>
       <MobileView>
-        <div className="row justify-content-center">
-          <div className="col-md-8">
-            <BlankA href="https://forms.gle/7MoU6zBwcVJJ9Ld9A">
-              <img
-                src="/CISC2020_practice_web_m.jpg"
-                className="img-fluid"
-                alt="ResponsiveImage"
-              />
-            </BlankA>
-          </div>
+        <div className="col-md-8">
+          <BlankA href="https://forms.gle/7MoU6zBwcVJJ9Ld9A">
+            <img
+              src="/CISC2020_practice_web_m.jpg"
+              className="img-fluid"
+              alt="ResponsiveImage"
+            />
+          </BlankA>
         </div>
       </MobileView>
     </Row>
