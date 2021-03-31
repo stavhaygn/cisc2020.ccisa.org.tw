@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Link } from 'react-router-dom';
 import { isBrowser } from 'react-device-detect';
 import './style.css';
 
-const Header = lazy(() => import('./Header'));
+import Header from './Header';
 const Content = lazy(() => import('./Content'));
 const Footer = lazy(() => import('./Footer'));
 
@@ -109,8 +109,8 @@ const App = () => (
           </div>
         </nav>
 
+        <Header />
         <Suspense fallback={<div />}>
-          <Header />
           <Content />
           <Footer />
         </Suspense>

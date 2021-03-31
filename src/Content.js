@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react';
+import React, { lazy } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 const Home = lazy(() => import('./Home'));
@@ -23,31 +23,29 @@ const Travel = lazy(() => import('./Travel'));
 const Session = lazy(() => import('./Session'));
 
 const Content = () => (
-  <Suspense fallback={<div />}>
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/News" component={News} />
-      <Route path="/NewsDetail/:number" component={NewsDetail} />
-      <Route path="/About" component={About} />
-      <Route path="/Agenda" component={Agenda} />
-      <Route path="/Itinerary" component={Itinerary} />
-      <Route path="/Session" component={Session} />
-      <Route path="/Paper" component={Paper} />
-      <Route path="/SignUp" component={SignUp} />
-      <Route path="/CTF" component={CTF} />
-      <Route path="/Poster" component={Poster} />
-      <Route path="/Information" component={Information} />
-      <Route path="/Traffic" component={Traffic} />
-      <Route path="/CampusMap" component={CampusMap} />
-      <Route path="/Accommodation" component={Accommodation} />
-      <Route path="/Partner" component={Partner} />
-      <Route path="/Organization" component={Organization} />
-      <Route path="/Organizer" component={Organizer} />
-      <Route path="/Travel" component={Travel} />
-      {/* <Route path="/Question" component={Question} /> */}
-      <Route component={Home} />
-    </Switch>
-  </Suspense>
+  <Switch>
+    <Route exact path="/" component={Home} />
+    <Route path="/News" component={News} />
+    <Route path="/NewsDetail/:number" component={NewsDetail} />
+    <Route path="/About" component={About} />
+    <Route path="/Agenda" component={Agenda} />
+    <Route path="/Itinerary" component={Itinerary} />
+    <Route path="/Session" component={Session} />
+    <Route path="/Paper" component={Paper} />
+    <Route path="/SignUp" component={SignUp} />
+    <Route path="/CTF" component={CTF} />
+    <Route path="/Poster" component={Poster} />
+    <Route path="/Information" component={Information} />
+    <Route path="/Traffic" component={Traffic} />
+    <Route path="/CampusMap" component={CampusMap} />
+    <Route path="/Accommodation" component={Accommodation} />
+    <Route path="/Partner" component={Partner} />
+    <Route path="/Organization" component={Organization} />
+    <Route path="/Organizer" component={Organizer} />
+    <Route path="/Travel" component={Travel} />
+    {/* <Route path="/Question" component={Question} /> */}
+    <Route component={Home} />
+  </Switch>
 );
 
 export default Content;
