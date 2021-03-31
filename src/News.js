@@ -3,7 +3,7 @@ import { Container } from './Utils';
 
 const Item = props => (
   <tr>
-    <td style={{ color: '#FFC650' }}>
+    <td style={{ color: '#224162' }}>
       <b>{props.date}</b>
     </td>
     <td>

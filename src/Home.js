@@ -4,7 +4,7 @@ import { Row, BlankA } from './Utils';
 
 const Item = props => (
   <tr>
-    <td style={{ color: '#FFC650' }}>
+    <td style={{ color: '#224162' }}>
       <b>{props.date}</b>
     </td>
     <td>
@@ -85,7 +85,7 @@ const Home = () => (
               <li>
                 <b>
                   論文投稿截止日：<strike>2020/6/30</strike>{' '}
-                  <font color="red">2020/7/7</font>
+                  <font color="#9a2732">2020/7/7</font>
                 </b>
               </li>
               <li>論文通知接受日：2020/8/4</li>
@@ -119,7 +119,6 @@ const Home = () => (
               <img
                 src="/CISC2020_practice_web_m.jpg"
                 className="img-fluid"
-                loading="lazy"
                 alt="ResponsiveImage"
               />
             </BlankA>
