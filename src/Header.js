@@ -22,6 +22,7 @@ const Item = props => (
 const Slide = () => (
   <header>
     <BrowserView>
+      <link rel="preload" href="/slide1.jpg" as="image" />
       <div
         id="carouselExampleIndicators"
         className="carousel slide"
@@ -74,6 +75,7 @@ const Slide = () => (
       </div>
     </BrowserView>
     <MobileView>
+      <link rel="preload" href="/mheader.jpg" as="image" />
       <img src="/mheader.jpg" className="img-fluid" alt="ResponsiveImage" />
     </MobileView>
   </header>
