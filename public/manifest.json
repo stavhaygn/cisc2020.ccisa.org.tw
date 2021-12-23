@@ -3,18 +3,18 @@
   "name": "Cryptology and Information Security Conference 2020",
   "icons": [
     {
-      "src": "favicon-512x512.png",
+      "src": "favicons/favicon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "maskable_favicon_512x512.png",
+      "src": "favicons/maskable_favicon_512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "favicon-192x192.png",
+      "src": "favicons/favicon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },

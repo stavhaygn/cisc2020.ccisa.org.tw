@@ -12,7 +12,7 @@ const SignUp = () => (
           線上報名
         </a>
         <br></br>
-        <a href="/CISC2020_paper_authorization.doc" download>
+        <a href="/documents/CISC2020_paper_authorization.doc" download>
           <button type="button" className="btn btn-success">
             下載著論文授權書
           </button>

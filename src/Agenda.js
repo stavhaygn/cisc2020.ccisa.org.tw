@@ -750,7 +750,7 @@ const Agenda = () => (
           </React.Fragment>
         </Table>
         <br />
-        <a href="/CISC2020_industry_agenda_20200817.pdf" download>
+        <a href="/documents/CISC2020_industry_agenda_20200817.pdf" download>
           <button type="button" className="btn btn-success mr-3 mb-3">
             產學技術研討議程表PDF下載
           </button>

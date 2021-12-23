@@ -105,17 +105,17 @@ const Paper = () => (
             </p>
           </li>
         </ul>
-        <a href="/CISC2020_format-0121rev.doc" download>
+        <a href="/documents/CISC2020_format-0121rev.doc" download>
           <button type="button" className="btn btn-success mr-3 mb-3">
             論文格式範例下載 Word
           </button>
         </a>
-        <a href="/CISC2020_format_XeLaTex.tex" download>
+        <a href="/documents/CISC2020_format_XeLaTex.tex" download>
           <button type="button" className="btn btn-success mr-3 mb-3">
             論文格式範例下載 XeLaTeX
           </button>
         </a>
-        <a href="/CISC2020_format_pdfTex.tex" download>
+        <a href="/documents/CISC2020_format_pdfTex.tex" download>
           <button type="button" className="btn btn-success mr-3 mb-3">
             論文格式範例下載 pdfTeX
           </button>
@@ -134,7 +134,7 @@ const Paper = () => (
         </p>
       </Column>
       <Column title="定稿/投稿教學">
-        <a href="EasyChair-tutorial-Chinese-CISC2020.pdf" download>
+        <a href="/documents/EasyChair-tutorial-Chinese-CISC2020.pdf" download>
           <button type="button" className="btn btn-success">
             開啟教學手冊PDF檔
           </button>

@@ -26,13 +26,21 @@ const Itinerary = () => (
         </ol>
       </div>
       <div className="col-md-4 my-4">
-        <img src="/a.png" className="img-fluid" alt="ResponsiveImage" />
+        <img
+          src="/itineraries/itineraryA.png"
+          className="img-fluid"
+          alt="ResponsiveImage"
+        />
       </div>
     </Row>
     <hr />
     <Row>
       <div className="col-md-4 mb-4">
-        <img src="/b.png" className="img-fluid" alt="ResponsiveImage" />
+        <img
+          src="/itineraries/itineraryB.png"
+          className="img-fluid"
+          alt="ResponsiveImage"
+        />
       </div>
       <div className="col-md-8 my-4">
         <h4 className="mb-3">參訪活動B-西子灣海域體驗規劃 </h4>

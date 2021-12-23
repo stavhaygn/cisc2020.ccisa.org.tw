@@ -22,7 +22,7 @@ const Item = props => (
 const Slide = () => (
   <header>
     <BrowserView>
-      <link rel="preload" href="/slide1.jpg" as="image" />
+      <link rel="preload" href="/slides/slide1.jpg" as="image" />
       <div
         id="carouselExampleIndicators"
         className="carousel slide"
@@ -41,12 +41,12 @@ const Slide = () => (
           <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
         </ol>
         <div className="carousel-inner" role="listbox">
-          <Item active src="url('slide1.jpg')" positionY="65%" />
-          <Item src="url('slide2.jpg')" positionY="80%" />
-          <Item src="url('slide3.jpg')" positionY="70%" />
-          <Item src="url('slide4.jpg')" positionY="60%" />
-          <Item src="url('slide5.jpg')" positionY="60%" />
-          <Item src="url('slide6.jpg')" positionY="80%" />
+          <Item active src="url('/slides/slide1.jpg')" positionY="65%" />
+          <Item src="url('/slides/slide2.jpg')" positionY="80%" />
+          <Item src="url('/slides/slide3.jpg')" positionY="70%" />
+          <Item src="url('/slides/slide4.jpg')" positionY="60%" />
+          <Item src="url('/slides/slide5.jpg')" positionY="60%" />
+          <Item src="url('/slides/slide6.jpg')" positionY="80%" />
         </div>
         <a
           className="carousel-control-prev"
@@ -76,7 +76,11 @@ const Slide = () => (
     </BrowserView>
     <MobileView>
       <link rel="preload" href="/mheader.jpg" as="image" />
-      <img src="/mheader.jpg" className="img-fluid" alt="ResponsiveImage" />
+      <img
+        src="/slides/m_slide.jpg"
+        className="img-fluid"
+        alt="ResponsiveImage"
+      />
     </MobileView>
   </header>
 );

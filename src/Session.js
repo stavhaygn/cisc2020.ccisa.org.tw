@@ -586,7 +586,7 @@ const Session = () => (
         <h5>C5應用服務安全 II</h5>
         <Table>{sessionC5}</Table>
         <br />
-        <a href="/CISC2020_session_20200813REV.pdf" download>
+        <a href="/documents/CISC2020_session_20200813REV.pdf" download>
           <button type="button" className="btn btn-success mr-3 mb-3">
             論文發表場次PDF下載
           </button>

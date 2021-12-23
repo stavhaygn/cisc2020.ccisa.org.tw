@@ -128,7 +128,7 @@ const Poster = () => (
             '解析度：300dpi（含）以上，CMYK四色印刷模式',
             <React.Fragment key="key">
               <img
-                src="/poster.png"
+                src="/posters/poster_A2_A6.png"
                 className="img-fluid"
                 loading="lazy"
                 alt="ResponsiveImage"
@@ -156,7 +156,7 @@ const Poster = () => (
             備註:請得獎人經主辦單位通知得獎後七個工作日內簽署並繳交「著作權授權同意書」，逾期者視同放棄得獎資格，由後面名次得獎人遞補。
           </b>
         </p>
-        <a href="CISC2020_poster_copyright_auth.doc" download>
+        <a href="/documents/CISC2020_poster_copyright_auth.doc" download>
           <button type="button" className="btn btn-success">
             下載著作權授權同意書
           </button>

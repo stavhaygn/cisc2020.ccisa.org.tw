@@ -103,7 +103,7 @@ const Home = () => (
           <div className="col-md-8">
             <BlankA href="https://forms.gle/7MoU6zBwcVJJ9Ld9A">
               <img
-                src="/CISC2020_practice_web.jpg"
+                src="/promotionals/practice.jpg"
                 className="img-fluid"
                 loading="lazy"
                 alt="ResponsiveImage"
@@ -116,7 +116,7 @@ const Home = () => (
         <div className="col-md-8">
           <BlankA href="https://forms.gle/7MoU6zBwcVJJ9Ld9A">
             <img
-              src="/CISC2020_practice_web_m.jpg"
+              src="/promotionals/m_practice.jpg"
               className="img-fluid"
               alt="ResponsiveImage"
             />
